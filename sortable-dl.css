@@ -32,3 +32,6 @@ dd                                  { display: none; width: 50%; height: 100px; 
 .sdl .sdl-number-links              { margin: 0; }
 .sdl .active-page                   { color: #fff; background: transparent url(sdl-disc.png) no-repeat scroll center center }
 .sdl .sdl-number-links span         { width: 17px; height: 17px; margin: 0 10px 0 0; text-align: center; cursor: pointer; }
+.asc,
+.desc,
+.active-column                      { background-color: #ffffdf; }
