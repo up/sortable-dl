@@ -1,81 +1,34 @@
-table {
-  border-collapse: collapse;
-  border-spacing: 0px;
-  empty-cells: show;
-  width: 100%;
-}
-table, tr, td, dl, dt, dd {
-  margin: 0;
-  padding: 0;
-}
-td {
-  border: 1px solid #666;
-  border-bottom: 1px solid #666;
-}
-dt {
-  display: inline-block;
-  width: 13%;
-  padding: 5px 2px;
-}
-dt.col4, dt.col5, dt.col6, dt.col7 {
-  text-align: right;
-}
-dt.col7 {
-  width: 10%;
-}
-tr {
-  background-color: #f8f8f8;
-}
-tr.thead {
-  background-color: #ccc;
-}
+.sdl span,
+dt,
+.ib                                 { display: -moz-inline-stack; /* <-- this is needed for Firefox2 to display inline blocks */ display: inline-block; vertical-align: top; height: 1%; }
+.ie6 dt                             { display: inline; }
+.ie6 .sdl span                      { display: inline; }
+.ie6 .ib                            { display: inline; }
+.ie7 dt                             { display: inline; }
+.ie6 .sdl span                      { display: inline; }
+.ie7 .ib                            { display: inline; }
+.hide                               { display: none; }
 
-.sortable-column span {
-	background: transparent url(sdl-sorter.png) no-repeat scroll right center;
-	padding:0 8px 0 0;
-}
 
-dd {
-  display: none;
-  width: 49%;
-  height: 100px;
-  background-color: #ffffff;
-}
-.asc {
-  color: green;
-}
-.desc {
-  color: red;
-}
-.active-column {
-	background: yellow; 
-}
+table                               { width: 100%; empty-cells: show; }
+td                                  { border: 1px solid #666; border-top: none; }
+.thead td                           { border-top: 1px solid #666; }
+dt                                  { width: 13%; padding: 5px 2px; }
+dt.col4, dt.col5, dt.col6, dt.col7  { text-align: right; }
+dt.col7                             { width: 10%; }
+tr                                  { background-color: #f8f8f8; }
+tr.thead                            { background-color: #ccc; }
 
-div.sdl {
-	font-size: 0.88em;
-	text-align: right;
-	margin: 12px 0;
-}
-div.sdl span {
-	display: inline-block;
-	margin: 0 2px;
-}
-div.sdl span.sdl-info {
-	margin: 0 30px 0 0;
-}
-div.sdl span.sdl-matches,
-div.sdl span.sdl-number-links {
-	margin: 0;
-}
-div.sdl span.active-page {
-  color: #FFFFFF;
-  background: transparent url(sdl-disc.png) no-repeat scroll center center
-}
-div.sdl span.sdl-number-links span {
-	height:17px;
-	line-height:1;
-	margin:0 10px 0 0;
-	padding: 6px 0 0;
-	text-align:center;
-	width:17px;
-}
+.sortable-column span               { padding: 0 8px 0 0; background: transparent url(sdl-sorter.png) no-repeat scroll right center; }
+
+dd                                  { display: none; width: 50%; height: 100px; background-color: #ffffff; }
+.asc                                { color: green; }
+.desc                               { color: red; }
+
+.sdl                                { margin: 12px 0; font-size: 0.88em; text-align: right; }
+.sdl span                           { margin: 0 2px; line-height: 17px; }
+.sdl .sdl-info                      { margin: 0 30px 0 0; }
+.sdl .sdl-matches,                  
+.sdl .sdl-number-links              { margin: 0; }
+.sdl .active-page                   { color: #fff; background: transparent url(sdl-disc.png) no-repeat scroll center center }
+.sdl .sdl-number-links span         { width: 17px; height: 17px; margin: 0 10px 0 0; text-align: center; cursor: pointer; }
