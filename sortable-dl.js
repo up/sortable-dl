@@ -56,6 +56,7 @@ var SortableDL = (function () {
     pages = 1,
     current_page = 1,
     current_column = 0,
+    startsorting = false,
     pc = null,
     pp = null,
     u = undefined,
@@ -184,8 +185,8 @@ var SortableDL = (function () {
         dataCols[col] = [];
         if(arr[col] !== null) {
           $(this).click(function () {
-            self.toggleClass(col, $(this));
             self.sort(col, arr[col]);
+            self.toggleClass(col, $(this));
           })  
           .addClass('sortable-column')
           .css('cursor', 'pointer');
@@ -194,6 +195,9 @@ var SortableDL = (function () {
     };
 
     this.sort = function (i, type) {
+
+      startsorting = true;
+
       dataCols[i].sort(function (a, b) {
 
         if (type === 'caseSensitive') {
@@ -220,6 +224,8 @@ var SortableDL = (function () {
     };
 
     this.toggleColClass = function (col) {
+ 
+      if(startsorting === false) { return; }
  
       $('#' + tableId + ' tr dt').each(function () {
         if($(this).hasClass(classes.column)) { 
