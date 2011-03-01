@@ -1,4 +1,4 @@
-#Getting started
+###Getting started
 
 To use the sortable-dl, include the jQuery library and the sortable-dl script and stylesheet inside the <head> tag of your HTML document:
 
@@ -33,7 +33,7 @@ NOTE: sortable-dl works NOT on standard HTML tables. It used a definition list h
           <dt class="col3"><span>Highlight</span></dt>
           <dt class="col4"><span>Anschlussgebühr</span></dt>
           <dt class="col5"><span>Grundgebühr</span></dt>
-          <dt class="col6"><span>Mindesumsatz</span></dt>
+          <dt class="col6"><span>Datum</span></dt>
           <dt class="col7">&nbsp;</dt>
         </dl>
       </td>
@@ -89,19 +89,37 @@ Start by telling sortable-dl to sort your dl-table when the document is loaded:
 	      'caseSensitive',        // Col 3
 	      'numeric',              // Col 4  
 	      'numeric',              // Col 5  
-	      'numeric',              // Col 6 
+	      'date',                 // Col 6 
 	      null                    // Col 7
 	    ],
 	    classes: {
-	      asc: 'asc',             // optional / default: 'asc'
-	      desc: 'desc',           // optional / default: 'desc'
-	      column: 'active-column' // optional / default: ''
+	      asc: 'asc',             // optional - default: 'asc'
+	      desc: 'desc',           // optional - default: 'desc'
+	      column: 'active-column' // optional - default: ''
 	    },
-	    pagination: {
-		  items: 5,               // Items per page
-		  numbers: 5              // Visible page numbers
+	    pagination: {			  // optional - default: 'no pager'
+		  items: 5,               // Items per page: optional - default: 'all'
+		  numbers: 5              // Visible page numbers: optional - default: 'all'
 	    }
 	  });  
 
 	});
 	</script>
+
+###Sorting Options
+
+1. caseInsensitive
+2. caseSensitive
+3. numeric
+4. date
+
+Sort by date accepted following date formats:
+
+* 1298851200000
+* 2011-02-28T00:00:00-00:00
+* 2011/02/28
+* 28/02/2011
+* 28.02.2011
+* Mon Feb 28 2011 00:00:00 GMT+0000
+* Mon, 28 Feb 2011 00:00:00 GMT");
+ 

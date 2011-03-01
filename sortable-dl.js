@@ -211,6 +211,9 @@ var SortableDL = (function () {
           a = isNaN(a) ? 0 : a;
           b = parseFloat(b[0]);
           b = isNaN(b) ? 0 : b;
+        } else if (type === 'date') {
+          a = self.unixTimestamp(a[0]);
+          b = self.unixTimestamp(b[0]);
         }
 
         if (self.isASC($('tr.thead dt:eq(' + i + ')'))) {
@@ -221,6 +224,37 @@ var SortableDL = (function () {
       });
       self.addRows(i);
       current_column = i;
+    };
+
+    this.unixTimestamp = function (input) {
+
+    	var msecs, 
+    	pos = function (a,b) {
+    		if(typeof input === 'string') {
+    			return input.substring(a,b);		
+    		}
+    		return 0;		
+    	},
+    	tz_msecs = (pos(19,20) + (pos(20,22) * 60 + pos(23,25) * 1)) * 60000;
+
+    	if(typeof input === 'number' || input === parseInt(input, 10)) {
+    		return input;
+    	}
+    	else if(typeof input === 'string' && (pos(3,4) === ' ' || pos(3,4) === ',')) {
+    		return new Date(input).getTime();
+    	}
+    	else {
+    		if ((pos(4,5) === '/' && pos(7,8) === '/') || (pos(4,5) === '-' && pos(7,8) === '-')) {
+    			msecs = Date.UTC(pos(0,4), pos(5,7)-1, pos(8,10), pos(11,13), pos(14,16), pos(17,19));
+    		}
+    		else if ((pos(2,3) === '/' && pos(5,6) === '/') ||  (pos(2,3) === '.' && pos(5,6) === '.')) {
+    			msecs = Date.UTC(pos(6,10), pos(3,5)-1, pos(0,2), pos(11,13), pos(14,16), pos(17,19));
+    		}
+
+    		return msecs - tz_msecs; // UNIX TIMESTAMP
+    		//return new Date(msecs-tz_msecs);
+    	}
+
     };
 
     this.toggleColClass = function (col) {
