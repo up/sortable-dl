@@ -12,12 +12,12 @@ dt,
 
 table                               { width: 100%; empty-cells: show; }
 td                                  { border: 1px solid #666; border-top: none; }
-.thead td                           { border-top: 1px solid #666; }
+thead td                            { border-top: 1px solid #666; }
 dt                                  { width: 13%; padding: 5px 2px; }
 dt.col4, dt.col5, dt.col6, dt.col7  { text-align: right; }
 dt.col7                             { width: 10%; }
 tr                                  { background-color: #f8f8f8; }
-tr.thead                            { background-color: #ccc; }
+thead tr                            { background-color: #ccc; }
 
 .sortable-column span               { padding: 0 8px 0 0; background: transparent url(sdl-sorter.png) no-repeat scroll right center; }
 

@@ -57,6 +57,7 @@ var SortableDL = (function () {
     current_page = 1,
     current_column = 0,
     startsorting = false,
+    firsttype = 'descending', // ascending
     pc = null,
     pp = null,
     u = undefined,
@@ -64,6 +65,7 @@ var SortableDL = (function () {
 
     this.init = function (param) {
       tableId = param.id;
+      firsttype = param.first !== u ? param.first : firsttype;
       pc = param.classes;
       pp = param.pagination;
       classes.asc = pc !== u && pc.asc !== u ? pc.asc : classes.asc;
@@ -181,7 +183,7 @@ var SortableDL = (function () {
     };
 
     this.addSortableLinks = function (arr) {
-      $('#' + tableId + ' tr.thead dt').each(function (col) {
+      $('#' + tableId + ' thead dt').each(function (col) {
         dataCols[col] = [];
         if(arr[col] !== null) {
           $(this).click(function () {
@@ -216,7 +218,7 @@ var SortableDL = (function () {
           b = self.unixTimestamp(b[0]);
         }
 
-        if (self.isASC($('tr.thead dt:eq(' + i + ')'))) {
+        if (self.isASC($('thead dt:eq(' + i + ')'))) {
           return (a < b) ? -1 : (a > b) ? 1 : 0;
         } else {
           return (a > b) ? -1 : (a < b) ? 1 : 0;
@@ -251,8 +253,7 @@ var SortableDL = (function () {
     			msecs = Date.UTC(pos(6,10), pos(3,5)-1, pos(0,2), pos(11,13), pos(14,16), pos(17,19));
     		}
 
-    		return msecs - tz_msecs; // UNIX TIMESTAMP
-    		//return new Date(msecs-tz_msecs);
+    		return msecs - tz_msecs;
     	}
 
     };
@@ -269,7 +270,7 @@ var SortableDL = (function () {
       // TODO: change timeout to callback !!!
       setTimeout(function(){
           $('#' + tableId + ' tr dt.col' + (parseInt(col, 10) + 1)).each(function () {
-            if(!$(this).parents('tr').hasClass('thead')) {
+            if($(this).parents('tbody')) {
               $(this).addClass(classes.column);
             }
           });       
@@ -278,7 +279,7 @@ var SortableDL = (function () {
     };
     this.toggleClass = function (col, tr) {
  
-       $('#' + tableId + ' tr.thead dt').each(function (i) {
+       $('#' + tableId + ' thead dt').each(function (i) {
         if(col === i) {
           if (!tr.hasClass(classes.asc)) {
             tr.addClass(classes.asc);
@@ -300,7 +301,12 @@ var SortableDL = (function () {
     };
     
     this.isASC = function (th) {
-      return th.hasClass(classes.asc);
+      if(firsttype === 'descending') {
+        return th.hasClass(classes.asc);
+      }
+      else if(firsttype === 'ascending') {
+        return !th.hasClass(classes.asc);
+      }
     };
 
     this.getRows = function () {
