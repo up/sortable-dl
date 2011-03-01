@@ -7,11 +7,11 @@ To use the sortable-dl, include the jQuery library and the sortable-dl script an
 	<script src="sortable-dl.min.js"></script>
 
 
-NOTE: sortable-dl works NOT on standard HTML tables. It used a definition list hack for hiding and showing extra information for any table row:
+NOTE: sortable-dl works NOT on standard HTML tables (more than one table cell in row). It used a definition list hack for hiding and showing extra information for any table row:
 
 	<table id="sortable">
 	<thead>
-	  <tr class="thead">
+	  <tr>
 	    <td>
 	      <dl>
 	        <dt class="col1"><span>Netz</span></dt>
