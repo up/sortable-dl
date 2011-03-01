@@ -9,7 +9,7 @@ To use the sortable-dl, include the jQuery library and the sortable-dl script an
 
 NOTE: sortable-dl works NOT on standard HTML tables. It used a definition list hack for hiding and showing extra information for any tablerow:
 
-  <table id="sortable">
+	<table id="sortable">
 
     <tr class="thead">
       <td>
