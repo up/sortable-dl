@@ -33,7 +33,7 @@ NOTE: sortable-dl works NOT on standard HTML tables. It used a definition list h
           <dt class="col3">Blah blah</dt>
           <dt class="col4">330,00 €</dt>
           <dt class="col5">52,98 €</dt>
-          <dt class="col6">0,00 €</dt>
+          <dt class="col6">01.03.2011</dt>
           <dt class="col7"><a href="javascript:show(1);">details</a></dt>
 
           <dd class="vertragsdetails">vertragsdetails 1</dd><dd class="vertragsinfos">vertragsinfos 1</dd>
@@ -49,7 +49,7 @@ NOTE: sortable-dl works NOT on standard HTML tables. It used a definition list h
           <dt class="col3">Blah blah</dt>
           <dt class="col4">90,00 €</dt>
           <dt class="col5">12,98 €</dt>
-          <dt class="col6">0,00 €</dt>
+          <dt class="col6">2011/02/28</dt>
           <dt class="col7"><a href="javascript:show(2);">details</a></dt>
 
           <dd class="vertragsdetails">vertragsdetails 2</dd><dd class="vertragsinfos">vertragsinfos 2</dd>
