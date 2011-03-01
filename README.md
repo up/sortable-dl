@@ -112,18 +112,18 @@ Sort by date accepted following date formats:
 
 ###Pager
 
-<div class="sdl">
-  <span class="sdl-info">
-	<span class="sdl-matches">0</span> Treffer auf
-	<span class="sdl-pages">0</span> Seite(n)
-  </span>
-  <span class="sdl-links">
-    <span class="sdl-first">Erste</span>
-    <span class="sdl-previous">Vorherige</span>
-    <span class="sdl-number-links">&nbsp;</span>
-    <span class="sdl-next">Nächste</span>
-    <span class="sdl-last">Letzte</span>
-  </span>
-</div>
+	<div class="sdl">
+	  <span class="sdl-info">
+		<span class="sdl-matches">0</span> Treffer auf
+		<span class="sdl-pages">0</span> Seite(n)
+	  </span>
+	  <span class="sdl-links">
+	    <span class="sdl-first">Erste</span>
+	    <span class="sdl-previous">Vorherige</span>
+	    <span class="sdl-number-links">&nbsp;</span>
+	    <span class="sdl-next">Nächste</span>
+	    <span class="sdl-last">Letzte</span>
+	  </span>
+	</div>
 
 
