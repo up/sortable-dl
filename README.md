@@ -119,7 +119,7 @@ Sort by date accepted following date formats:
 * 2011/02/28 (US Short Date Format)
 * 28/02/2011 (EU Short Date Format)
 * 28.02.2011 (EU Short Date Format)
-* 2011-02-28T00:00:00-00:00 (ISO 8601)
+* 2011-02-28T00:00:00-00:00 (ISO 8601 Date Format)
 * Mon Feb 28 2011 00:00:00 GMT+0000 (Javascript Default Date Format)
 * Mon, 28 Feb 2011 00:00:00 GMT (Javascript GMT Date Format)
  
