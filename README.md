@@ -1,6 +1,6 @@
 ###Getting started
 
-To use the sortable-dl, include the jQuery library and the sortable-dl script and stylesheet inside the <head> tag of your HTML document:
+To use the sortable-dl, include the jQuery library and the sortable-dl script and stylesheet inside the &lt;head> tag of your HTML document:
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="sortable-dl.css">
