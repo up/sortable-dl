@@ -99,7 +99,7 @@ Start by telling sortable-dl to sort your dl-table when the document is loaded:
 3. numeric
 4. date
 
-Sort by date accepted following date formats:
+Sort by date acceptes following date formats:
 
 * 1298851200000 (UNIX Timestamp)
 * 2011/02/28 (US Short Date Format)
