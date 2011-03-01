@@ -115,11 +115,11 @@ Start by telling sortable-dl to sort your dl-table when the document is loaded:
 
 Sort by date accepted following date formats:
 
-* 1298851200000
-* 2011-02-28T00:00:00-00:00
-* 2011/02/28
-* 28/02/2011
-* 28.02.2011
-* Mon Feb 28 2011 00:00:00 GMT+0000
-* Mon, 28 Feb 2011 00:00:00 GMT");
+* 1298851200000 (UNIX Timestamp)
+* 2011/02/28 (US Short Date Format)
+* 28/02/2011 (EU Short Date Format)
+* 28.02.2011 (EU Short Date Format)
+* 2011-02-28T00:00:00-00:00 (ISO 8601)
+* Mon Feb 28 2011 00:00:00 GMT+0000 (Javascript Default Date Format)
+* Mon, 28 Feb 2011 00:00:00 GMT (Javascript GMT Date Format)
  
