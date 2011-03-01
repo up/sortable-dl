@@ -7,7 +7,7 @@ To use the sortable-dl, include the jQuery library and the sortable-dl script an
 	<script src="sortable-dl.min.js"></script>
 
 
-NOTE: sortable-dl works NOT on standard HTML tables. It used a definition list hack for hiding and showing extra information for any tablerow:
+NOTE: sortable-dl works NOT on standard HTML tables. It used a definition list hack for hiding and showing extra information for any table row:
 
 	<table id="sortable">
 
