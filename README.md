@@ -9,20 +9,6 @@ To use the sortable-dl, include the jQuery library and the sortable-dl script an
 
 NOTE: sortable-dl works NOT on standard HTML tables. It used a definition list hack for hiding and showing extra information for any tablerow:
 
-  <div class="sdl">
-    <span class="sdl-info">
-  	<span class="sdl-matches">0</span> Treffer auf
-  	<span class="sdl-pages">0</span> Seite(n)
-    </span>
-    <span class="sdl-links">
-      <span class="sdl-first">Erste</span>
-      <span class="sdl-previous">Vorherige</span>
-      <span class="sdl-number-links">&nbsp;</span>
-      <span class="sdl-next">Nächste</span>
-      <span class="sdl-last">Letzte</span>
-    </span>
-  </div>
-
   <table id="sortable">
 
     <tr class="thead">
@@ -123,3 +109,21 @@ Sort by date accepted following date formats:
 * Mon Feb 28 2011 00:00:00 GMT+0000 (Javascript Default Date Format)
 * Mon, 28 Feb 2011 00:00:00 GMT (Javascript GMT Date Format)
  
+
+###Pager
+
+<div class="sdl">
+  <span class="sdl-info">
+	<span class="sdl-matches">0</span> Treffer auf
+	<span class="sdl-pages">0</span> Seite(n)
+  </span>
+  <span class="sdl-links">
+    <span class="sdl-first">Erste</span>
+    <span class="sdl-previous">Vorherige</span>
+    <span class="sdl-number-links">&nbsp;</span>
+    <span class="sdl-next">Nächste</span>
+    <span class="sdl-last">Letzte</span>
+  </span>
+</div>
+
+
