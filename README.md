@@ -1,3 +1,40 @@
+##SortableDL
+
+There are a few excellent plugins for jQuery for Table sorting. But none offers an option for extra content ('more information ..'), hidden per default and with valid Markup. SortableDL uses principle standard tables but with a little 'Markup Hack'. Instead:
+
+	  <tr>
+      <td class="col1"></td>
+      <td class="col2"></td>
+      <td class="col3"></td>
+	  </tr>
+
+we use Definition List Elements for columns:
+
+	<tr>
+	  <td>
+	    <dl>
+	      <dt class="col1"></dt>
+	      <dt class="col2"></dt>
+	      <dt class="col3"></dt>
+	    </dl>
+	  </td>
+	</tr>
+
+Now we can add DD element(s) for the extra content (hidden per default) :
+
+	<tr>
+	  <td>
+	    <dl>
+	      <dt class="col1"></dt>
+	      <dt class="col2"></dt>
+	      <dt class="col3"></dt>
+	      <dd>additional content</dd>
+	      <dd>more additional content</dd>
+	    </dl>
+	  </td>
+	</tr>
+
+
 ###Getting started
 
 To use the sortable-dl, include the jQuery library and the sortable-dl script and stylesheet inside the &lt;head> tag of your HTML document:
@@ -60,7 +97,7 @@ NOTE: sortable-dl works NOT on standard HTML tables (more than one table cell in
 	</table>
 
 
-Start by telling sortable-dl to sort your dl-table when the document is loaded:
+Start by creating a new instance of SortableDL and init with your options to sort the table when the document is loaded:
 
 	<script>
 	$(document).ready(function() {  
@@ -68,7 +105,8 @@ Start by telling sortable-dl to sort your dl-table when the document is loaded:
 	  var mySorter = new SortableDL();
 	  mySorter.init({
 	    id: 'sortable',           // Table ID
-	    first: 'ascending',       // optional / default 'descending'columns: [
+	    first: 'ascending',       // optional / default 'descending'
+	    columns: [
 	      null,                   // Col 1
 	      'caseInsensitive',      // Col 2
 	      'caseSensitive',        // Col 3
@@ -110,6 +148,8 @@ Sort by date accepts following date formats:
  
 
 ###Pager
+
+You can create multiple pagers (normally at the top and bottom of the sortable table) with the following HTML fragment:
 
 	<div class="sdl">
 	  <span class="sdl-info">
