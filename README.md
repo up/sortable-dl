@@ -1,6 +1,8 @@
 ##SortableDL
 
-There are a few excellent plugins for jQuery for Table sorting. But none offers an option for extra content ('more information ..'), hidden per default and with valid Markup. SortableDL uses principle standard tables but with a little 'Markup Hack'. Instead:
+There are a few excellent plugins for jQuery for Table sorting. But none offers an option for extra content ('more information ..'), hidden per default and with valid Markup. SortableDL uses standard tables with a little 'Markup Hack'. 
+
+Instead:
 
 	<tr>
 	  <td class="col1"></td>
@@ -8,7 +10,7 @@ There are a few excellent plugins for jQuery for Table sorting. But none offers 
 	  <td class="col3"></td>
 	</tr>
 
-we use Definition List Elements for columns:
+we take Definition List Elements for columns:
 
 	<tr>
 	  <td>
