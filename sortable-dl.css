@@ -1,37 +1,114 @@
-.sdl span,
-dt,
-.ib                                 { display: -moz-inline-stack; /* <-- this is needed for Firefox2 to display inline blocks */ display: inline-block; vertical-align: top; height: 1%; }
-.ie6 dt                             { display: inline; }
-.ie6 .sdl span                      { display: inline; }
-.ie6 .ib                            { display: inline; }
-.ie7 dt                             { display: inline; }
-.ie6 .sdl span                      { display: inline; }
-.ie7 .ib                            { display: inline; }
-.hide                               { display: none; }
+.sdl-container .sdl span,
+.sdl-container dt,
+.sdl-container .ib {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  height: 1%;
+}
+.ie6 .sdl-container dt {
+  display: inline;
+}
+.ie6 .sdl-container .sdl span {
+  display: inline;
+}
+.ie6 .sdl-container .ib {
+  display: inline;
+}
+.ie7 .sdl-container dt {
+  display: inline;
+}
+.ie6 .sdl-container .sdl span {
+  display: inline;
+}
+.ie7 .sdl-container .ib {
+  display: inline;
+}
+.sdl-container .hide {
+  display: none;
+}
 
+.sdl-container dl  {
+  margin: 0;
+}
+.sdl-container table {
+  width: 100%;
+  empty-cells: show;
+}
+.sdl-container td {
+  border: 1px solid #666;
+  border-top: none;
+}
+.sdl-container thead td {
+  border-top: 1px solid #666;
+}
+.sdl-container dt {
+  width: 13%;
+  padding: 5px 2px;
+}
+.sdl-container dt.col4,
+.sdl-container dt.col5,
+.sdl-container dt.col6,
+.sdl-container dt.col7  {
+  text-align: right;
+}
+.sdl-container dt.col7 {
+  width: 10%;
+}
+.sdl-container tr {
+  background-color: #f8f8f8;
+}
+.sdl-container thead tr {
+  background-color: #ccc;
+}
 
-table                               { width: 100%; empty-cells: show; }
-td                                  { border: 1px solid #666; border-top: none; }
-thead td                            { border-top: 1px solid #666; }
-dt                                  { width: 13%; padding: 5px 2px; }
-dt.col4, dt.col5, dt.col6, dt.col7  { text-align: right; }
-dt.col7                             { width: 10%; }
-tr                                  { background-color: #f8f8f8; }
-thead tr                            { background-color: #ccc; }
+.sdl-container .sortable-column span {
+  padding: 0 8px 0 0;
+  background: transparent url(sdl-sorter.png) no-repeat scroll right center;
+}
 
-.sortable-column span               { padding: 0 8px 0 0; background: transparent url(sdl-sorter.png) no-repeat scroll right center; }
+.sdl-container dd {
+  display: none;
+  margin: 0;
+  width: 50%;
+  height: 100px;
+  background-color: #ffffff;
+}
+.sdl-container .asc {
+  color: green;
+}
+.sdl-container .desc {
+  color: red;
+}
 
-dd                                  { display: none; width: 50%; height: 100px; background-color: #ffffff; }
-.asc                                { color: green; }
-.desc                               { color: red; }
-
-.sdl                                { margin: 12px 0; font-size: 0.88em; text-align: right; }
-.sdl span                           { margin: 0 2px; line-height: 17px; }
-.sdl .sdl-info                      { margin: 0 30px 0 0; }
-.sdl .sdl-matches,                  
-.sdl .sdl-number-links              { margin: 0; }
-.sdl .active-page                   { color: #fff; background: transparent url(sdl-disc.png) no-repeat scroll center center }
-.sdl .sdl-number-links span         { width: 17px; height: 17px; margin: 0 10px 0 0; text-align: center; cursor: pointer; }
-.asc,
-.desc,
-.active-column                      { background-color: #ffffdf; }
+.sdl-container .sdl {
+  margin: 12px 0;
+  font-size: 0.88em;
+  text-align: right;
+}
+.sdl-container .sdl span {
+  margin: 0 2px;
+  line-height: 17px;
+}
+.sdl-container .sdl .sdl-info {
+  margin: 0 30px 0 0;
+}
+.sdl-container .sdl .sdl-matches,                  
+.sdl-container .sdl .sdl-number-links {
+  margin: 0;
+}
+.sdl-container .sdl .active-page {
+  color: #fff;
+  background: transparent url(sdl-disc.png) no-repeat scroll center center }
+.sdl-container .sdl .sdl-number-links span {
+  width: 17px;
+  height: 17px;
+  margin: 0 10px 0 0;
+  text-align: center;
+  cursor: pointer;
+}
+.sdl-container .asc,
+.sdl-container .desc,
+.sdl-container .active-column {
+  background-color: #ffffdf;
+}
