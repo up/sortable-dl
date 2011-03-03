@@ -2,11 +2,11 @@
 
 There are a few excellent plugins for jQuery for Table sorting. But none offers an option for extra content ('more information ..'), hidden per default and with valid Markup. SortableDL uses principle standard tables but with a little 'Markup Hack'. Instead:
 
-	  <tr>
-      <td class="col1"></td>
-      <td class="col2"></td>
-      <td class="col3"></td>
-	  </tr>
+	<tr>
+	  <td class="col1"></td>
+	  <td class="col2"></td>
+	  <td class="col3"></td>
+	</tr>
 
 we use Definition List Elements for columns:
 
@@ -44,7 +44,7 @@ To use the sortable-dl, include the jQuery library and the sortable-dl script an
 	<script src="sortable-dl.min.js"></script>
 
 
-NOTE: sortable-dl works NOT on standard HTML tables (more than one table cell in row). It used a definition list hack for hiding and showing extra information for any table row:
+NOTE: sortable-dl works NOT on standard HTML tables (more than one table cell in row). As described before, it used a definition list hack for hiding and showing extra information for any table row:
 
 	<table id="sortable">
 	<thead>
