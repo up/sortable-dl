@@ -71,7 +71,7 @@
 }
 .sdl-container dt.col2,
 .sdl-container dt.col3  {
-  width: 240px;
+  width: 285px;
 }
 .sdl-container dt.col4,
 .sdl-container dt.col6  {
@@ -87,7 +87,7 @@
 }
 
 .sdl-container .sortable-column span {
-  padding: 0 8px 0 0;
+  padding: 0 12px 0 0;
   background: transparent url(sdl-sorter.png) no-repeat scroll right center;
 }
 
