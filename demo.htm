@@ -32,7 +32,7 @@ $(document).ready(function() {
       null,               // Col 1: Netz
       'caseInsensitive',  // Col 2: Tarifname
       'caseSensitive',    // Col 3: Highlight
-      'numeric',          // Col 4: Anschlussgebühr  
+      'caseInsensitive',          // Col 4: Anschlussgebühr  
       'numeric',          // Col 5: Grundgebühr  
       'date',             // Col 6: Datum  
       null                // Col 7: Buttons
@@ -71,15 +71,15 @@ body {
   <div class="sdl-container">
     <div class="sdl">
       <span class="sdl-info">
-    	<span class="sdl-matches">0</span> Treffer auf
-    	<span class="sdl-pages">0</span> Seite(n)
+    	<span class="sdl-matches">0</span> Hits on
+    	<span class="sdl-pages">0</span> Page(s)
       </span>
       <span class="sdl-links">
-        <span class="sdl-first">Erste</span>
-        <span class="sdl-previous">Vorherige</span>
+        <span class="sdl-first">First</span>
+        <span class="sdl-previous">Previous</span>
         <span class="sdl-number-links">&nbsp;</span>
-        <span class="sdl-next">Nächste</span>
-        <span class="sdl-last">Letzte</span>
+        <span class="sdl-next">Next</span>
+        <span class="sdl-last">Last</span>
       </span>
     </div> <!-- /sdl -->
     <table id="sortable">
@@ -87,12 +87,12 @@ body {
 	      <tr>
 	        <td>
 	          <dl>
-	            <dt class="col1"><span>Netz</span></dt>
-	            <dt class="col2"><span>Tarifname</span></dt>
-	            <dt class="col3"><span>Highlight</span></dt>
-	            <dt class="col4"><span>Anschlussgebühr</span></dt>
-	            <dt class="col5"><span>Grundgebühr</span></dt>
-	            <dt class="col6"><span>Datum</span></dt>
+	            <dt class="col1"><span>File type</span></dt>
+	            <dt class="col2"><span>Track</span></dt>
+	            <dt class="col3"><span>Interpret</span></dt>
+	            <dt class="col4"><span>Genre</span></dt>
+	            <dt class="col5"><span>Price</span></dt>
+	            <dt class="col6"><span>Release Date</span></dt>
 	            <dt class="col7">&nbsp;</dt>
 	          </dl>
 	        </td>
@@ -102,481 +102,480 @@ body {
 	      <tr id="row1">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 1</dt>
-	            <dt class="col2">c-Superflat</dt>
-	            <dt class="col3">Blah blah</dt>
-	            <dt class="col4">330,00 €</dt>
-	            <dt class="col5">52,98 €</dt>
-	            <dt class="col6">28.02.2011</dt>
-	            <dt class="col7"><a href="javascript:show(1);">details</a></dt>
+	            <dt class="col1">MP3</dt>
+	            <dt class="col2">Awful Thing</dt>
+	            <dt class="col3">Cee-Lo</dt>
+	            <dt class="col4">R'n'B</dt>
+	            <dt class="col5">1.99 €</dt>
+	            <dt class="col6">28.02.2002</dt>
+	            <dt class="col7"><a href="javascript:show(1);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 1</dd><dd class="vertragsinfos">vertragsinfos 1</dd>
+	            <dd class="sdl-details">Details 1</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row2">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 2</dt>
-	            <dt class="col2">a-Superflat</dt>
-	            <dt class="col3">Blah blah</dt>
-	            <dt class="col4">90,00 €</dt>
-	            <dt class="col5">12,98 €</dt>
-	            <dt class="col6">28.02.2011</dt>
-	            <dt class="col7"><a href="javascript:show(2);">details</a></dt>
+	            <dt class="col1">MP3</dt>
+	            <dt class="col2">Weather Storm</dt>
+	            <dt class="col3">Craig Armstrong</dt>
+	            <dt class="col4">Ambient</dt>
+	            <dt class="col5">0.98 €</dt>
+	            <dt class="col6">28.01.2010</dt>
+	            <dt class="col7"><a href="javascript:show(2);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 2</dd><dd class="vertragsinfos">vertragsinfos 2</dd>
+	            <dd class="sdl-details">Details 2</dd><dd class="vertragsinfos">vertragsinfos 2</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row3">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 3</dt>
-	            <dt class="col2">b-Superflat</dt>
-	            <dt class="col3">Blah blah</dt>
-	            <dt class="col4">180,00 €</dt>
-	            <dt class="col5">99,98 €</dt>
-	            <dt class="col6">28.02.2011</dt>
-	            <dt class="col7"><a href="javascript:show(3);">details</a></dt>
+	            <dt class="col1">OGG</dt>
+	            <dt class="col2">Higher</dt>
+	            <dt class="col3">Creed</dt>
+	            <dt class="col4">Rock</dt>
+	            <dt class="col5">0.90 €</dt>
+	            <dt class="col6">14.07.2009</dt>
+	            <dt class="col7"><a href="javascript:show(3);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 3</dd><dd class="vertragsinfos">vertragsinfos 3</dd>
+	            <dd class="sdl-details">Details 3</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row4">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 4</dt>
-	            <dt class="col2">d-Superflat</dt>
-	            <dt class="col3">blah blah</dt>
-	            <dt class="col4">20,00 €</dt>
-	            <dt class="col5">20,01 €</dt>
-	            <dt class="col6">01.01.2011</dt>
-	            <dt class="col7"><a href="javascript:show(4);">details</a></dt>
+	            <dt class="col1">MP3</dt>
+	            <dt class="col2">Moonlight Shadow</dt>
+	            <dt class="col3">Mike Oldfield</dt>
+	            <dt class="col4">New Age</dt>
+	            <dt class="col5">0,79 €</dt>
+	            <dt class="col6">03.10.1976</dt>
+	            <dt class="col7"><a href="javascript:show(4);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 4</dd><dd class="vertragsinfos">vertragsinfos 4</dd>
+	            <dd class="sdl-details">Details 4</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row5">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 5</dt>
-	            <dt class="col2">x-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">1,00 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(5);">details</a></dt>
+	            <dt class="col1">OGG</dt>
+	            <dt class="col2">Remedy</dt>
+	            <dt class="col3">The Black Crowes</dt>
+	            <dt class="col4">Rock</dt>
+	            <dt class="col5">1.00 €</dt>
+	            <dt class="col6">01.03.1991</dt>
+	            <dt class="col7"><a href="javascript:show(5);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 5</dd><dd class="vertragsinfos">vertragsinfos 5</dd>
+	            <dd class="sdl-details">Details 5</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row6">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 6</dt>
-	            <dt class="col2">k-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">111,00 €</dt>
-	            <dt class="col5">10,00 €</dt>
-	            <dt class="col6">2011/03/01</dt>
-	            <dt class="col7"><a href="javascript:show(6);">details</a></dt>
+	            <dt class="col1">OGG</dt>
+	            <dt class="col2">Fancy</dt>
+	            <dt class="col3">Drake (feat. Mary J Blige)</dt>
+	            <dt class="col4">Hip Hop</dt>
+	            <dt class="col5">1.98 €</dt>
+	            <dt class="col6">2010/05/13</dt>
+	            <dt class="col7"><a href="javascript:show(6);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 6</dd><dd class="vertragsinfos">vertragsinfos 6</dd>
+	            <dd class="sdl-details">Details 6</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row7">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 7</dt>
-	            <dt class="col2">t-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">33,00 €</dt>
-	            <dt class="col5">33,00 €</dt>
-	            <dt class="col6">31.12.2010</dt>
-	            <dt class="col7"><a href="javascript:show(7);">details</a></dt>
+	            <dt class="col1">MP3</dt>
+	            <dt class="col2">Circus</dt>
+	            <dt class="col3">Lenny Kravitz</dt>
+	            <dt class="col4">Rock</dt>
+	            <dt class="col5">2,99 €</dt>
+	            <dt class="col6">31.12.1995</dt>
+	            <dt class="col7"><a href="javascript:show(7);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 7</dd><dd class="vertragsinfos">vertragsinfos 7</dd>
+	            <dd class="sdl-details">Details 7</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row8">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 8</dt>
-	            <dt class="col2">i-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">0,00 €</dt>
-	            <dt class="col5">0,00 €</dt>
-	            <dt class="col6">28.02.2011</dt>
-	            <dt class="col7"><a href="javascript:show(8);">details</a></dt>
+	            <dt class="col1">OGG</dt>
+	            <dt class="col2">When Doves Cry</dt>
+	            <dt class="col3">Prince</dt>
+	            <dt class="col4">Pop</dt>
+	            <dt class="col5">0.69 €</dt>
+	            <dt class="col6">28.02.1989</dt>
+	            <dt class="col7"><a href="javascript:show(8);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row9">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(9);">details</a></dt>
+	            <dt class="col1">OGG</dt>
+	            <dt class="col2">F-W-B</dt>
+	            <dt class="col3">Wayne Brady</dt>
+	            <dt class="col4">Soul</dt>
+	            <dt class="col5">1.00 €</dt>
+	            <dt class="col6">01.03.2009</dt>
+	            <dt class="col7"><a href="javascript:show(9);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row10">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(10);">details</a></dt>
+	            <dt class="col1">OGG</dt>
+	            <dt class="col2">All I Need</dt>
+	            <dt class="col3">Air</dt>
+	            <dt class="col4">Ambient</dt>
+	            <dt class="col5">1.19 €</dt>
+	            <dt class="col6">15.08.2007</dt>
+	            <dt class="col7"><a href="javascript:show(10);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row11">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
+	            <dt class="col1">MP3</dt>
+	            <dt class="col2">Get Outta My Way</dt>
+	            <dt class="col3">Kylie Minogue</dt>
+	            <dt class="col4">Pop</dt>
+	            <dt class="col5">1.99 €</dt>
 	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(11);">details</a></dt>
+	            <dt class="col7"><a href="javascript:show(11);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row12">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(12);">details</a></dt>
+	            <dt class="col1">MP3</dt>
+	            <dt class="col2">Black &amp; Yellow (T-Mix)</dt>
+	            <dt class="col3">Wiz Khalifa feat T-Pain</dt>
+	            <dt class="col4">Hip Hop</dt>
+	            <dt class="col5">1.29 €</dt>
+	            <dt class="col6">16.01.2011</dt>
+	            <dt class="col7"><a href="javascript:show(12);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row13">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(13);">details</a></dt>
+	            <dt class="col1">OGG</dt>
+	            <dt class="col2">Caribbean Queen</dt>
+	            <dt class="col3">Billy Ocean</dt>
+	            <dt class="col4">R'n'B</dt>
+	            <dt class="col5">0.49 €</dt>
+	            <dt class="col6">01.07.1987</dt>
+	            <dt class="col7"><a href="javascript:show(13);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row14">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(14);">details</a></dt>
+	            <dt class="col1">MP3</dt>
+	            <dt class="col2">Uhh Ahh</dt>
+	            <dt class="col3">Boyz II Men</dt>
+	            <dt class="col4">Soul</dt>
+	            <dt class="col5">1.39 €</dt>
+	            <dt class="col6">01.11.1993</dt>
+	            <dt class="col7"><a href="javascript:show(14);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row15">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(15);">details</a></dt>
+	            <dt class="col1">MP3</dt>
+	            <dt class="col2">God In Me</dt>
+	            <dt class="col3">Mary Mary feat. Kierra Kiki She</dt>
+	            <dt class="col4">R'n'B</dt>
+	            <dt class="col5">1.89 €</dt>
+	            <dt class="col6">01.09.2009</dt>
+	            <dt class="col7"><a href="javascript:show(15);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row16">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(16);">details</a></dt>
+	            <dt class="col1">MP3</dt>
+	            <dt class="col2">Down n Out</dt>
+	            <dt class="col3">Nappy Roots (feat Anthony Hamilton)</dt>
+	            <dt class="col4">Hip Hop</dt>
+	            <dt class="col5">2.39 €</dt>
+	            <dt class="col6">20.04.2009</dt>
+	            <dt class="col7"><a href="javascript:show(16);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row17">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(17);">details</a></dt>
+	            <dt class="col1">OGG</dt>
+	            <dt class="col2">Move on Up</dt>
+	            <dt class="col3">Curtis Mayfield</dt>
+	            <dt class="col4">Soul</dt>
+	            <dt class="col5">1.19 €</dt>
+	            <dt class="col6">09.07.1975</dt>
+	            <dt class="col7"><a href="javascript:show(17);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row18">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(18);">details</a></dt>
+	            <dt class="col1">OGG</dt>
+	            <dt class="col2">Cosmic girl</dt>
+	            <dt class="col3">Jamiroquai</dt>
+	            <dt class="col4">Funk</dt>
+	            <dt class="col5">1.79 €</dt>
+	            <dt class="col6">11.12.1997</dt>
+	            <dt class="col7"><a href="javascript:show(18);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row19">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(19);">details</a></dt>
+	            <dt class="col1">MP3</dt>
+	            <dt class="col2">Good Friday</dt>
+	            <dt class="col3">Kanye West ( feat Common, Pusha T, Kid Cudi, Big Sean, Charlie Wilson)</dt>
+	            <dt class="col4">Hip Hop</dt>
+	            <dt class="col5">3.34 €</dt>
+	            <dt class="col6">03.03.2011</dt>
+	            <dt class="col7"><a href="javascript:show(19);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row20">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(20);">details</a></dt>
+	            <dt class="col1">OGG</dt>
+	            <dt class="col2">Stay Down</dt>
+	            <dt class="col3">Mary J. Blige</dt>
+	            <dt class="col4">Soul / Hip Hop</dt>
+	            <dt class="col5">1.11 €</dt>
+	            <dt class="col6">02.04.2008</dt>
+	            <dt class="col7"><a href="javascript:show(20);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row21">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(21);">details</a></dt>
+	            <dt class="col1">OGG</dt>
+	            <dt class="col2">Green Light</dt>
+	            <dt class="col3">John Legend (Feat. Andre 3000)</dt>
+	            <dt class="col4">R'n'B</dt>
+	            <dt class="col5">2.89 €</dt>
+	            <dt class="col6">21.06.2007</dt>
+	            <dt class="col7"><a href="javascript:show(21);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row22">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(22);">details</a></dt>
+	            <dt class="col1">MP3</dt>
+	            <dt class="col2">Energy Flow</dt>
+	            <dt class="col3">Vitae</dt>
+	            <dt class="col4">Pop</dt>
+	            <dt class="col5">5.99 €</dt>
+	            <dt class="col6">17.08.2003</dt>
+	            <dt class="col7"><a href="javascript:show(22);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row23">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(23);">details</a></dt>
+	            <dt class="col1">OGG</dt>
+	            <dt class="col2">Lisztomania</dt>
+	            <dt class="col3">Phoenix</dt>
+	            <dt class="col4">Pop</dt>
+	            <dt class="col5">3.19 €</dt>
+	            <dt class="col6">22.10.2009</dt>
+	            <dt class="col7"><a href="javascript:show(23);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row24">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(24);">details</a></dt>
+	            <dt class="col1">MP3</dt>
+	            <dt class="col2">Don't Mess With My Man</dt>
+	            <dt class="col3">Booty Luv</dt>
+	            <dt class="col4">Dance</dt>
+	            <dt class="col5">1.99 €</dt>
+	            <dt class="col6">23.08.2008</dt>
+	            <dt class="col7"><a href="javascript:show(24);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row25">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(25);">details</a></dt>
+	            <dt class="col1">MP3</dt>
+	            <dt class="col2">One desire</dt>
+	            <dt class="col3">Jakarta</dt>
+	            <dt class="col4">Dance</dt>
+	            <dt class="col5">2.49 €</dt>
+	            <dt class="col6">30.09.2006</dt>
+	            <dt class="col7"><a href="javascript:show(25);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row26">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(26);">details</a></dt>
+	            <dt class="col1">MP3</dt>
+	            <dt class="col2">Dani California</dt>
+	            <dt class="col3">Red Hot Chili Peppers</dt>
+	            <dt class="col4">Alternativ</dt>
+	            <dt class="col5">4.00 €</dt>
+	            <dt class="col6">09.05.2002</dt>
+	            <dt class="col7"><a href="javascript:show(26);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row27">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(27);">details</a></dt>
+	            <dt class="col1">MP3</dt>
+	            <dt class="col2">The Mystery (Who Is God?)</dt>
+	            <dt class="col3">Rakim</dt>
+	            <dt class="col4">Hip Hop</dt>
+	            <dt class="col5">1.00 €</dt>
+	            <dt class="col6">11.08.1997</dt>
+	            <dt class="col7"><a href="javascript:show(27);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row28">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(28);">details</a></dt>
+	            <dt class="col1">OGG</dt>
+	            <dt class="col2">Africa</dt>
+	            <dt class="col3">Toto</dt>
+	            <dt class="col4">Pop</dt>
+	            <dt class="col5">7.89 €</dt>
+	            <dt class="col6">14.02.1979</dt>
+	            <dt class="col7"><a href="javascript:show(28);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row29">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(29);">details</a></dt>
+	            <dt class="col1">OGG</dt>
+	            <dt class="col2">Too Shy</dt>
+	            <dt class="col3">Kajagoogoo</dt>
+	            <dt class="col4">Pop</dt>
+	            <dt class="col5">8.00 €</dt>
+	            <dt class="col6">01.03.1981</dt>
+	            <dt class="col7"><a href="javascript:show(29);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row30">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(30);">details</a></dt>
+	            <dt class="col1">MP3</dt>
+	            <dt class="col2">Stutter (Double Take Remix)</dt>
+	            <dt class="col3">Joe feat. Mystikal</dt>
+	            <dt class="col4">R'n'B</dt>
+	            <dt class="col5">5.19 €</dt>
+	            <dt class="col6">08.09.2000</dt>
+	            <dt class="col7"><a href="javascript:show(30);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row31">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(31);">details</a></dt>
+	            <dt class="col1">MP3</dt>
+	            <dt class="col2">Wuthering Heights</dt>
+	            <dt class="col3">Kate Bush</dt>
+	            <dt class="col4">Pop</dt>
+	            <dt class="col5">1.29 €</dt>
+	            <dt class="col6">01.04.1978</dt>
+	            <dt class="col7"><a href="javascript:show(31);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd><dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row32">
 	        <td>
 	          <dl>
-	            <dt class="col1">T-Mobile 9</dt>
-	            <dt class="col2">y-Superflat</dt>
-	            <dt class="col3">blah blah blah</dt>
-	            <dt class="col4">9,99 €</dt>
-	            <dt class="col5">1,00 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(32);">details</a></dt>
+	            <dt class="col1">OGG</dt>
+	            <dt class="col2">Got To Be Real</dt>
+	            <dt class="col3">Cheryl Lynn</dt>
+	            <dt class="col4">Funk</dt>
+	            <dt class="col5">1.00 €</dt>
+	            <dt class="col6">03.04.1992</dt>
+	            <dt class="col7"><a href="javascript:show(32);">Details</a></dt>
   
-	            <dd class="vertragsdetails">vertragsdetails 8</dd>
-	            <dd class="vertragsinfos">vertragsinfos 8</dd>
+	            <dd class="sdl-details">Details</dd>
 	          </dl>
 	        </td>
 	      </tr>
@@ -584,15 +583,15 @@ body {
     </table>
     <div class="sdl">
       <span class="sdl-info">
-    	<span class="sdl-matches">0</span> Treffer auf
-    	<span class="sdl-pages">0</span> Seite(n)
+    	<span class="sdl-matches">0</span> Hits on
+    	<span class="sdl-pages">0</span> Page(s)
       </span>
       <span class="sdl-links">
-        <span class="sdl-first">Erste</span>
-        <span class="sdl-previous">Vorherige</span>
+        <span class="sdl-first">First</span>
+        <span class="sdl-previous">Previous</span>
         <span class="sdl-number-links">&nbsp;</span>
-        <span class="sdl-next">Nächste</span>
-        <span class="sdl-last">Letzte</span>
+        <span class="sdl-next">Next</span>
+        <span class="sdl-last">Last</span>
       </span>
     </div> <!-- /sdl -->
   </div> <!-- /sdl-container -->
