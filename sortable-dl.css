@@ -33,9 +33,13 @@
 }
 .sdl-container table {
   width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
   empty-cells: show;
 }
 .sdl-container td {
+  padding: 0;
+  margin: 0;
   border: 1px solid #666;
   border-top: none;
 }
@@ -46,7 +50,7 @@
   width: 14%;
 }
 .sdl-container dt .pad {
-  padding: 5px 2px;
+  padding: 5px;
 }
 .sdl-container dt.col5,
 .sdl-container dt.col6,
