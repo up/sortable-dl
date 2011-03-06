@@ -29,7 +29,7 @@ $(document).ready(function() {
     id: 'sortable',       // Table ID
     first: 'ascending',   // optional / default 'descending'
     columns: [
-      null,               // Col 1: File type
+      null,               // Col 1: Row #
       'caseInsensitive',  // Col 2: Track
       'caseSensitive',    // Col 3: Interpret
       'caseInsensitive',  // Col 4: Genre  
@@ -87,7 +87,7 @@ body {
 	      <tr>
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad"><span>File type</span></div></dt>
+	            <dt class="col1"><div class="pad"><span>Row #</span></div></dt>
 	            <dt class="col2"><div class="pad"><span>Track</span></div></dt>
 	            <dt class="col3"><div class="pad"><span>Interpret</span></div></dt>
 	            <dt class="col4"><div class="pad"><span>Genre</span></div></dt>
@@ -102,7 +102,7 @@ body {
 	      <tr id="row1">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col1"><div class="pad">1</div></dt>
 	            <dt class="col2"><div class="pad">Awful Thing</div></dt>
 	            <dt class="col3"><div class="pad">Cee-Lo</div></dt>
 	            <dt class="col4"><div class="pad">R'n'B</div></dt>
@@ -110,14 +110,20 @@ body {
 	            <dt class="col6"><div class="pad">28.02.2002</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(1);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details 1</dd>
-	          </dl>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (1)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+  	          </dd>
+  	        </dl>
 	        </td>
 	      </tr>
 	      <tr id="row2">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col1"><div class="pad">2</div></dt>
 	            <dt class="col2"><div class="pad">Weather Storm</div></dt>
 	            <dt class="col3"><div class="pad">Craig Armstrong</div></dt>
 	            <dt class="col4"><div class="pad">Ambient</div></dt>
@@ -125,14 +131,20 @@ body {
 	            <dt class="col6"><div class="pad">28.01.2010</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(2);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details 2</dd><dd class="vertragsinfos">vertragsinfos 2</dd>
-	          </dl>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (2)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+  	          </dd>
+  	        </dl>
 	        </td>
 	      </tr>
 	      <tr id="row3">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col1"><div class="pad">3</div></dt>
 	            <dt class="col2"><div class="pad">Higher</div></dt>
 	            <dt class="col3"><div class="pad">Creed</div></dt>
 	            <dt class="col4"><div class="pad">Rock</div></dt>
@@ -140,14 +152,20 @@ body {
 	            <dt class="col6"><div class="pad">14.07.2009</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(3);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details 3</dd>
-	          </dl>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (3)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+  	          </dd>
+  	        </dl>
 	        </td>
 	      </tr>
 	      <tr id="row4">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col1"><div class="pad">4</div></dt>
 	            <dt class="col2"><div class="pad">Moonlight Shadow</div></dt>
 	            <dt class="col3"><div class="pad">Mike Oldfield</div></dt>
 	            <dt class="col4"><div class="pad">New Age</div></dt>
@@ -155,14 +173,20 @@ body {
 	            <dt class="col6"><div class="pad">03.10.1976</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(4);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details 4</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (4)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+  	          </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row5">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col1"><div class="pad">5</div></dt>
 	            <dt class="col2"><div class="pad">Remedy</div></dt>
 	            <dt class="col3"><div class="pad">The Black Crowes</div></dt>
 	            <dt class="col4"><div class="pad">Rock</div></dt>
@@ -170,14 +194,20 @@ body {
 	            <dt class="col6"><div class="pad">01.03.1991</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(5);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details 5</dd>
-	          </dl>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (5)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+  	          </dd>
+  	        </dl>
 	        </td>
 	      </tr>
 	      <tr id="row6">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col1"><div class="pad">6</div></dt>
 	            <dt class="col2"><div class="pad">Fancy</div></dt>
 	            <dt class="col3"><div class="pad">Drake (feat. Mary J Blige)</div></dt>
 	            <dt class="col4"><div class="pad">Hip Hop</div></dt>
@@ -185,14 +215,20 @@ body {
 	            <dt class="col6"><div class="pad">2010/05/13</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(6);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details 6</dd>
-	          </dl>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (6)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+  	          </dd>
+  	        </dl>
 	        </td>
 	      </tr>
 	      <tr id="row7">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col1"><div class="pad">7</div></dt>
 	            <dt class="col2"><div class="pad">Circus</div></dt>
 	            <dt class="col3"><div class="pad">Lenny Kravitz</div></dt>
 	            <dt class="col4"><div class="pad">Rock</div></dt>
@@ -200,14 +236,20 @@ body {
 	            <dt class="col6"><div class="pad">31.12.1995</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(7);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details 7</dd>
-	          </dl>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (7)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+  	          </dd>
+  	        </dl>
 	        </td>
 	      </tr>
 	      <tr id="row8">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col1"><div class="pad">8</div></dt>
 	            <dt class="col2"><div class="pad">When Doves Cry</div></dt>
 	            <dt class="col3"><div class="pad">Prince</div></dt>
 	            <dt class="col4"><div class="pad">Pop</div></dt>
@@ -215,14 +257,20 @@ body {
 	            <dt class="col6"><div class="pad">28.02.1989</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(8);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (8)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row9">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col1"><div class="pad">9</div></dt>
 	            <dt class="col2"><div class="pad">F-W-B</div></dt>
 	            <dt class="col3"><div class="pad">Wayne Brady</div></dt>
 	            <dt class="col4"><div class="pad">Soul</div></dt>
@@ -230,14 +278,20 @@ body {
 	            <dt class="col6"><div class="pad">01.03.2009</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(9);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (9)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row10">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col1"><div class="pad">10</div></dt>
 	            <dt class="col2"><div class="pad">All I Need</div></dt>
 	            <dt class="col3"><div class="pad">Air</div></dt>
 	            <dt class="col4"><div class="pad">Ambient</div></dt>
@@ -245,14 +299,20 @@ body {
 	            <dt class="col6"><div class="pad">15.08.2007</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(10);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (10)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row11">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col1"><div class="pad">11</div></dt>
 	            <dt class="col2"><div class="pad">Get Outta My Way</div></dt>
 	            <dt class="col3"><div class="pad">Kylie Minogue</div></dt>
 	            <dt class="col4"><div class="pad">Pop</div></dt>
@@ -260,14 +320,20 @@ body {
 	            <dt class="col6"><div class="pad">01.03.2011</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(11);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (11)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row12">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col1"><div class="pad">12</div></dt>
 	            <dt class="col2"><div class="pad">Black &amp; Yellow (T-Mix)</div></dt>
 	            <dt class="col3"><div class="pad">Wiz Khalifa feat T-Pain</div></dt>
 	            <dt class="col4"><div class="pad">Hip Hop</div></dt>
@@ -275,14 +341,20 @@ body {
 	            <dt class="col6"><div class="pad">16.01.2011</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(12);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (12)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row13">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col1"><div class="pad">13</div></dt>
 	            <dt class="col2"><div class="pad">Caribbean Queen</div></dt>
 	            <dt class="col3"><div class="pad">Billy Ocean</div></dt>
 	            <dt class="col4"><div class="pad">R'n'B</div></dt>
@@ -290,14 +362,20 @@ body {
 	            <dt class="col6"><div class="pad">01.07.1987</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(13);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (13)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row14">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col1"><div class="pad">14</div></dt>
 	            <dt class="col2"><div class="pad">Uhh Ahh</div></dt>
 	            <dt class="col3"><div class="pad">Boyz II Men</div></dt>
 	            <dt class="col4"><div class="pad">Soul</div></dt>
@@ -305,14 +383,20 @@ body {
 	            <dt class="col6"><div class="pad">01.11.1993</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(14);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (14)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row15">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col1"><div class="pad">15</div></dt>
 	            <dt class="col2"><div class="pad">God In Me</div></dt>
 	            <dt class="col3"><div class="pad">Mary Mary feat. Kierra Kiki She</div></dt>
 	            <dt class="col4"><div class="pad">R'n'B</div></dt>
@@ -320,14 +404,20 @@ body {
 	            <dt class="col6"><div class="pad">01.09.2009</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(15);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (15)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row16">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col1"><div class="pad">16</div></dt>
 	            <dt class="col2"><div class="pad">Down n Out</div></dt>
 	            <dt class="col3"><div class="pad">Nappy Roots (feat Anthony Hamilton)</div></dt>
 	            <dt class="col4"><div class="pad">Hip Hop</div></dt>
@@ -335,14 +425,20 @@ body {
 	            <dt class="col6"><div class="pad">20.04.2009</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(16);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (16)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row17">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col1"><div class="pad">17</div></dt>
 	            <dt class="col2"><div class="pad">Move on Up</div></dt>
 	            <dt class="col3"><div class="pad">Curtis Mayfield</div></dt>
 	            <dt class="col4"><div class="pad">Soul</div></dt>
@@ -350,14 +446,20 @@ body {
 	            <dt class="col6"><div class="pad">09.07.1975</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(17);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (17)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row18">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col1"><div class="pad">18</div></dt>
 	            <dt class="col2"><div class="pad">Cosmic girl</div></dt>
 	            <dt class="col3"><div class="pad">Jamiroquai</div></dt>
 	            <dt class="col4"><div class="pad">Funk</div></dt>
@@ -365,14 +467,20 @@ body {
 	            <dt class="col6"><div class="pad">11.12.1997</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(18);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (18)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row19">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col1"><div class="pad">19</div></dt>
 	            <dt class="col2"><div class="pad">Good Friday</div></dt>
 	            <dt class="col3"><div class="pad">Kanye West ( feat Common, Pusha T, Kid Cudi, Big Sean, Charlie Wilson)</div></dt>
 	            <dt class="col4"><div class="pad">Hip Hop</div></dt>
@@ -380,14 +488,20 @@ body {
 	            <dt class="col6"><div class="pad">03.03.2011</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(19);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (19)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row20">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col1"><div class="pad">20</div></dt>
 	            <dt class="col2"><div class="pad">Stay Down</div></dt>
 	            <dt class="col3"><div class="pad">Mary J. Blige</div></dt>
 	            <dt class="col4"><div class="pad">Soul / Hip Hop</div></dt>
@@ -395,14 +509,20 @@ body {
 	            <dt class="col6"><div class="pad">02.04.2008</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(20);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (20)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row21">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col1"><div class="pad">21</div></dt>
 	            <dt class="col2"><div class="pad">Green Light</div></dt>
 	            <dt class="col3"><div class="pad">John Legend (Feat. Andre 3000)</div></dt>
 	            <dt class="col4"><div class="pad">R'n'B</div></dt>
@@ -410,14 +530,20 @@ body {
 	            <dt class="col6"><div class="pad">21.06.2007</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(21);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (21)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row22">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col1"><div class="pad">22</div></dt>
 	            <dt class="col2"><div class="pad">Energy Flow</div></dt>
 	            <dt class="col3"><div class="pad">Vitae</div></dt>
 	            <dt class="col4"><div class="pad">Pop</div></dt>
@@ -425,14 +551,20 @@ body {
 	            <dt class="col6"><div class="pad">17.08.2003</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(22);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (22)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row23">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col1"><div class="pad">23</div></dt>
 	            <dt class="col2"><div class="pad">Lisztomania</div></dt>
 	            <dt class="col3"><div class="pad">Phoenix</div></dt>
 	            <dt class="col4"><div class="pad">Pop</div></dt>
@@ -440,14 +572,20 @@ body {
 	            <dt class="col6"><div class="pad">22.10.2009</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(23);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (23)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row24">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col1"><div class="pad">24</div></dt>
 	            <dt class="col2"><div class="pad">Don't Mess With My Man</div></dt>
 	            <dt class="col3"><div class="pad">Booty Luv</div></dt>
 	            <dt class="col4"><div class="pad">Dance</div></dt>
@@ -455,14 +593,20 @@ body {
 	            <dt class="col6"><div class="pad">23.08.2008</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(24);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (24)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row25">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col1"><div class="pad">25</div></dt>
 	            <dt class="col2"><div class="pad">One desire</div></dt>
 	            <dt class="col3"><div class="pad">Jakarta</div></dt>
 	            <dt class="col4"><div class="pad">Dance</div></dt>
@@ -470,14 +614,20 @@ body {
 	            <dt class="col6"><div class="pad">30.09.2006</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(25);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (25)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row26">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col1"><div class="pad">26</div></dt>
 	            <dt class="col2"><div class="pad">Dani California</div></dt>
 	            <dt class="col3"><div class="pad">Red Hot Chili Peppers</div></dt>
 	            <dt class="col4"><div class="pad">Alternativ</div></dt>
@@ -485,14 +635,20 @@ body {
 	            <dt class="col6"><div class="pad">09.05.2002</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(26);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (26)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row27">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col1"><div class="pad">27</div></dt>
 	            <dt class="col2"><div class="pad">The Mystery (Who Is God?)</div></dt>
 	            <dt class="col3"><div class="pad">Rakim</div></dt>
 	            <dt class="col4"><div class="pad">Hip Hop</div></dt>
@@ -500,14 +656,20 @@ body {
 	            <dt class="col6"><div class="pad">11.08.1997</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(27);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (27)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row28">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col1"><div class="pad">28</div></dt>
 	            <dt class="col2"><div class="pad">Africa</div></dt>
 	            <dt class="col3"><div class="pad">Toto</div></dt>
 	            <dt class="col4"><div class="pad">Pop</div></dt>
@@ -515,14 +677,20 @@ body {
 	            <dt class="col6"><div class="pad">14.02.1979</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(28);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (28)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row29">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col1"><div class="pad">29</div></dt>
 	            <dt class="col2"><div class="pad">Too Shy</div></dt>
 	            <dt class="col3"><div class="pad">Kajagoogoo</div></dt>
 	            <dt class="col4"><div class="pad">Pop</div></dt>
@@ -530,14 +698,20 @@ body {
 	            <dt class="col6"><div class="pad">01.03.1981</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(29);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (29)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row30">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col1"><div class="pad">30</div></dt>
 	            <dt class="col2"><div class="pad">Stutter (Double Take Remix)</div></dt>
 	            <dt class="col3"><div class="pad">Joe feat. Mystikal</div></dt>
 	            <dt class="col4"><div class="pad">R'n'B</div></dt>
@@ -545,14 +719,20 @@ body {
 	            <dt class="col6"><div class="pad">08.09.2000</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(30);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (30)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row31">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col1"><div class="pad">31</div></dt>
 	            <dt class="col2"><div class="pad">Wuthering Heights</div></dt>
 	            <dt class="col3"><div class="pad">Kate Bush</div></dt>
 	            <dt class="col4"><div class="pad">Pop</div></dt>
@@ -560,14 +740,20 @@ body {
 	            <dt class="col6"><div class="pad">01.04.1978</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(31);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (31)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
 	      <tr id="row32">
 	        <td>
 	          <dl>
-	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col1"><div class="pad">32</div></dt>
 	            <dt class="col2"><div class="pad">Got To Be Real</div></dt>
 	            <dt class="col3"><div class="pad">Cheryl Lynn</div></dt>
 	            <dt class="col4"><div class="pad">Funk</div></dt>
@@ -575,7 +761,13 @@ body {
 	            <dt class="col6"><div class="pad">03.04.1992</div></dt>
 	            <dt class="col7"><div class="pad"><a href="javascript:show(32);">Details</a></div></dt>
   
-	            <dd class="sdl-details">Details</dd>
+	            <dd class="sdl-details">
+	              <div class="pad">
+  	              <h2>Details (32)</h2>
+  	              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+  	              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+  	            </div>
+	            </dd>
 	          </dl>
 	        </td>
 	      </tr>
