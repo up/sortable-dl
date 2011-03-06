@@ -43,7 +43,9 @@
   border-top: 1px solid #666;
 }
 .sdl-container dt {
-  width: 13%;
+  width: 14%;
+}
+.sdl-container dt .pad {
   padding: 5px 2px;
 }
 .sdl-container dt.col5,
@@ -51,9 +53,22 @@
 .sdl-container dt.col7  {
   text-align: right;
 }
-.sdl-container dt.col7 {
-  width: 10%;
+
+.sdl-container dt.col1,
+.sdl-container dt.col5,
+.sdl-container dt.col7  {
+  width: 60px;
 }
+.sdl-container dt.col2,
+.sdl-container dt.col3  {
+  width: 240px;
+}
+.sdl-container dt.col4,
+.sdl-container dt.col6  {
+  width: 90px;
+}
+
+
 .sdl-container tr {
   background-color: #f8f8f8;
 }

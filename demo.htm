@@ -29,12 +29,12 @@ $(document).ready(function() {
     id: 'sortable',       // Table ID
     first: 'ascending',   // optional / default 'descending'
     columns: [
-      null,               // Col 1: Netz
-      'caseInsensitive',  // Col 2: Tarifname
-      'caseSensitive',    // Col 3: Highlight
-      'caseInsensitive',          // Col 4: Anschlussgebühr  
-      'numeric',          // Col 5: Grundgebühr  
-      'date',             // Col 6: Datum  
+      null,               // Col 1: File type
+      'caseInsensitive',  // Col 2: Track
+      'caseSensitive',    // Col 3: Interpret
+      'caseInsensitive',  // Col 4: Genre  
+      'numeric',          // Col 5: Price  
+      'date',             // Col 6: Release  
       null                // Col 7: Buttons
     ],
     classes: {
@@ -87,13 +87,13 @@ body {
 	      <tr>
 	        <td>
 	          <dl>
-	            <dt class="col1"><span>File type</span></dt>
-	            <dt class="col2"><span>Track</span></dt>
-	            <dt class="col3"><span>Interpret</span></dt>
-	            <dt class="col4"><span>Genre</span></dt>
-	            <dt class="col5"><span>Price</span></dt>
-	            <dt class="col6"><span>Release Date</span></dt>
-	            <dt class="col7">&nbsp;</dt>
+	            <dt class="col1"><div class="pad"><span>File type</span></div></dt>
+	            <dt class="col2"><div class="pad"><span>Track</span></div></dt>
+	            <dt class="col3"><div class="pad"><span>Interpret</span></div></dt>
+	            <dt class="col4"><div class="pad"><span>Genre</span></div></dt>
+	            <dt class="col5"><div class="pad"><span>Price</span></div></dt>
+	            <dt class="col6"><div class="pad"><span>Release</span></div></dt>
+	            <dt class="col7"><div class="pad">&nbsp;</div></dt>
 	          </dl>
 	        </td>
 	      </tr>
@@ -102,13 +102,13 @@ body {
 	      <tr id="row1">
 	        <td>
 	          <dl>
-	            <dt class="col1">MP3</dt>
-	            <dt class="col2">Awful Thing</dt>
-	            <dt class="col3">Cee-Lo</dt>
-	            <dt class="col4">R'n'B</dt>
-	            <dt class="col5">1.99 €</dt>
-	            <dt class="col6">28.02.2002</dt>
-	            <dt class="col7"><a href="javascript:show(1);">Details</a></dt>
+	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col2"><div class="pad">Awful Thing</div></dt>
+	            <dt class="col3"><div class="pad">Cee-Lo</div></dt>
+	            <dt class="col4"><div class="pad">R'n'B</div></dt>
+	            <dt class="col5"><div class="pad">1.99 €</div></dt>
+	            <dt class="col6"><div class="pad">28.02.2002</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(1);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details 1</dd>
 	          </dl>
@@ -117,13 +117,13 @@ body {
 	      <tr id="row2">
 	        <td>
 	          <dl>
-	            <dt class="col1">MP3</dt>
-	            <dt class="col2">Weather Storm</dt>
-	            <dt class="col3">Craig Armstrong</dt>
-	            <dt class="col4">Ambient</dt>
-	            <dt class="col5">0.98 €</dt>
-	            <dt class="col6">28.01.2010</dt>
-	            <dt class="col7"><a href="javascript:show(2);">Details</a></dt>
+	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col2"><div class="pad">Weather Storm</div></dt>
+	            <dt class="col3"><div class="pad">Craig Armstrong</div></dt>
+	            <dt class="col4"><div class="pad">Ambient</div></dt>
+	            <dt class="col5"><div class="pad">0.98 €</div></dt>
+	            <dt class="col6"><div class="pad">28.01.2010</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(2);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details 2</dd><dd class="vertragsinfos">vertragsinfos 2</dd>
 	          </dl>
@@ -132,13 +132,13 @@ body {
 	      <tr id="row3">
 	        <td>
 	          <dl>
-	            <dt class="col1">OGG</dt>
-	            <dt class="col2">Higher</dt>
-	            <dt class="col3">Creed</dt>
-	            <dt class="col4">Rock</dt>
-	            <dt class="col5">0.90 €</dt>
-	            <dt class="col6">14.07.2009</dt>
-	            <dt class="col7"><a href="javascript:show(3);">Details</a></dt>
+	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col2"><div class="pad">Higher</div></dt>
+	            <dt class="col3"><div class="pad">Creed</div></dt>
+	            <dt class="col4"><div class="pad">Rock</div></dt>
+	            <dt class="col5"><div class="pad">0.90 €</div></dt>
+	            <dt class="col6"><div class="pad">14.07.2009</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(3);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details 3</dd>
 	          </dl>
@@ -147,13 +147,13 @@ body {
 	      <tr id="row4">
 	        <td>
 	          <dl>
-	            <dt class="col1">MP3</dt>
-	            <dt class="col2">Moonlight Shadow</dt>
-	            <dt class="col3">Mike Oldfield</dt>
-	            <dt class="col4">New Age</dt>
-	            <dt class="col5">0,79 €</dt>
-	            <dt class="col6">03.10.1976</dt>
-	            <dt class="col7"><a href="javascript:show(4);">Details</a></dt>
+	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col2"><div class="pad">Moonlight Shadow</div></dt>
+	            <dt class="col3"><div class="pad">Mike Oldfield</div></dt>
+	            <dt class="col4"><div class="pad">New Age</div></dt>
+	            <dt class="col5"><div class="pad">0,79 €</div></dt>
+	            <dt class="col6"><div class="pad">03.10.1976</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(4);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details 4</dd>
 	          </dl>
@@ -162,13 +162,13 @@ body {
 	      <tr id="row5">
 	        <td>
 	          <dl>
-	            <dt class="col1">OGG</dt>
-	            <dt class="col2">Remedy</dt>
-	            <dt class="col3">The Black Crowes</dt>
-	            <dt class="col4">Rock</dt>
-	            <dt class="col5">1.00 €</dt>
-	            <dt class="col6">01.03.1991</dt>
-	            <dt class="col7"><a href="javascript:show(5);">Details</a></dt>
+	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col2"><div class="pad">Remedy</div></dt>
+	            <dt class="col3"><div class="pad">The Black Crowes</div></dt>
+	            <dt class="col4"><div class="pad">Rock</div></dt>
+	            <dt class="col5"><div class="pad">1.00 €</div></dt>
+	            <dt class="col6"><div class="pad">01.03.1991</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(5);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details 5</dd>
 	          </dl>
@@ -177,13 +177,13 @@ body {
 	      <tr id="row6">
 	        <td>
 	          <dl>
-	            <dt class="col1">OGG</dt>
-	            <dt class="col2">Fancy</dt>
-	            <dt class="col3">Drake (feat. Mary J Blige)</dt>
-	            <dt class="col4">Hip Hop</dt>
-	            <dt class="col5">1.98 €</dt>
-	            <dt class="col6">2010/05/13</dt>
-	            <dt class="col7"><a href="javascript:show(6);">Details</a></dt>
+	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col2"><div class="pad">Fancy</div></dt>
+	            <dt class="col3"><div class="pad">Drake (feat. Mary J Blige)</div></dt>
+	            <dt class="col4"><div class="pad">Hip Hop</div></dt>
+	            <dt class="col5"><div class="pad">1.98 €</div></dt>
+	            <dt class="col6"><div class="pad">2010/05/13</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(6);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details 6</dd>
 	          </dl>
@@ -192,13 +192,13 @@ body {
 	      <tr id="row7">
 	        <td>
 	          <dl>
-	            <dt class="col1">MP3</dt>
-	            <dt class="col2">Circus</dt>
-	            <dt class="col3">Lenny Kravitz</dt>
-	            <dt class="col4">Rock</dt>
-	            <dt class="col5">2,99 €</dt>
-	            <dt class="col6">31.12.1995</dt>
-	            <dt class="col7"><a href="javascript:show(7);">Details</a></dt>
+	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col2"><div class="pad">Circus</div></dt>
+	            <dt class="col3"><div class="pad">Lenny Kravitz</div></dt>
+	            <dt class="col4"><div class="pad">Rock</div></dt>
+	            <dt class="col5"><div class="pad">2,99 €</div></dt>
+	            <dt class="col6"><div class="pad">31.12.1995</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(7);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details 7</dd>
 	          </dl>
@@ -207,13 +207,13 @@ body {
 	      <tr id="row8">
 	        <td>
 	          <dl>
-	            <dt class="col1">OGG</dt>
-	            <dt class="col2">When Doves Cry</dt>
-	            <dt class="col3">Prince</dt>
-	            <dt class="col4">Pop</dt>
-	            <dt class="col5">0.69 €</dt>
-	            <dt class="col6">28.02.1989</dt>
-	            <dt class="col7"><a href="javascript:show(8);">Details</a></dt>
+	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col2"><div class="pad">When Doves Cry</div></dt>
+	            <dt class="col3"><div class="pad">Prince</div></dt>
+	            <dt class="col4"><div class="pad">Pop</div></dt>
+	            <dt class="col5"><div class="pad">0.69 €</div></dt>
+	            <dt class="col6"><div class="pad">28.02.1989</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(8);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -222,13 +222,13 @@ body {
 	      <tr id="row9">
 	        <td>
 	          <dl>
-	            <dt class="col1">OGG</dt>
-	            <dt class="col2">F-W-B</dt>
-	            <dt class="col3">Wayne Brady</dt>
-	            <dt class="col4">Soul</dt>
-	            <dt class="col5">1.00 €</dt>
-	            <dt class="col6">01.03.2009</dt>
-	            <dt class="col7"><a href="javascript:show(9);">Details</a></dt>
+	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col2"><div class="pad">F-W-B</div></dt>
+	            <dt class="col3"><div class="pad">Wayne Brady</div></dt>
+	            <dt class="col4"><div class="pad">Soul</div></dt>
+	            <dt class="col5"><div class="pad">1.00 €</div></dt>
+	            <dt class="col6"><div class="pad">01.03.2009</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(9);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -237,13 +237,13 @@ body {
 	      <tr id="row10">
 	        <td>
 	          <dl>
-	            <dt class="col1">OGG</dt>
-	            <dt class="col2">All I Need</dt>
-	            <dt class="col3">Air</dt>
-	            <dt class="col4">Ambient</dt>
-	            <dt class="col5">1.19 €</dt>
-	            <dt class="col6">15.08.2007</dt>
-	            <dt class="col7"><a href="javascript:show(10);">Details</a></dt>
+	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col2"><div class="pad">All I Need</div></dt>
+	            <dt class="col3"><div class="pad">Air</div></dt>
+	            <dt class="col4"><div class="pad">Ambient</div></dt>
+	            <dt class="col5"><div class="pad">1.19 €</div></dt>
+	            <dt class="col6"><div class="pad">15.08.2007</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(10);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -252,13 +252,13 @@ body {
 	      <tr id="row11">
 	        <td>
 	          <dl>
-	            <dt class="col1">MP3</dt>
-	            <dt class="col2">Get Outta My Way</dt>
-	            <dt class="col3">Kylie Minogue</dt>
-	            <dt class="col4">Pop</dt>
-	            <dt class="col5">1.99 €</dt>
-	            <dt class="col6">01.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(11);">Details</a></dt>
+	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col2"><div class="pad">Get Outta My Way</div></dt>
+	            <dt class="col3"><div class="pad">Kylie Minogue</div></dt>
+	            <dt class="col4"><div class="pad">Pop</div></dt>
+	            <dt class="col5"><div class="pad">1.99 €</div></dt>
+	            <dt class="col6"><div class="pad">01.03.2011</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(11);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -267,13 +267,13 @@ body {
 	      <tr id="row12">
 	        <td>
 	          <dl>
-	            <dt class="col1">MP3</dt>
-	            <dt class="col2">Black &amp; Yellow (T-Mix)</dt>
-	            <dt class="col3">Wiz Khalifa feat T-Pain</dt>
-	            <dt class="col4">Hip Hop</dt>
-	            <dt class="col5">1.29 €</dt>
-	            <dt class="col6">16.01.2011</dt>
-	            <dt class="col7"><a href="javascript:show(12);">Details</a></dt>
+	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col2"><div class="pad">Black &amp; Yellow (T-Mix)</div></dt>
+	            <dt class="col3"><div class="pad">Wiz Khalifa feat T-Pain</div></dt>
+	            <dt class="col4"><div class="pad">Hip Hop</div></dt>
+	            <dt class="col5"><div class="pad">1.29 €</div></dt>
+	            <dt class="col6"><div class="pad">16.01.2011</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(12);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -282,13 +282,13 @@ body {
 	      <tr id="row13">
 	        <td>
 	          <dl>
-	            <dt class="col1">OGG</dt>
-	            <dt class="col2">Caribbean Queen</dt>
-	            <dt class="col3">Billy Ocean</dt>
-	            <dt class="col4">R'n'B</dt>
-	            <dt class="col5">0.49 €</dt>
-	            <dt class="col6">01.07.1987</dt>
-	            <dt class="col7"><a href="javascript:show(13);">Details</a></dt>
+	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col2"><div class="pad">Caribbean Queen</div></dt>
+	            <dt class="col3"><div class="pad">Billy Ocean</div></dt>
+	            <dt class="col4"><div class="pad">R'n'B</div></dt>
+	            <dt class="col5"><div class="pad">0.49 €</div></dt>
+	            <dt class="col6"><div class="pad">01.07.1987</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(13);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -297,13 +297,13 @@ body {
 	      <tr id="row14">
 	        <td>
 	          <dl>
-	            <dt class="col1">MP3</dt>
-	            <dt class="col2">Uhh Ahh</dt>
-	            <dt class="col3">Boyz II Men</dt>
-	            <dt class="col4">Soul</dt>
-	            <dt class="col5">1.39 €</dt>
-	            <dt class="col6">01.11.1993</dt>
-	            <dt class="col7"><a href="javascript:show(14);">Details</a></dt>
+	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col2"><div class="pad">Uhh Ahh</div></dt>
+	            <dt class="col3"><div class="pad">Boyz II Men</div></dt>
+	            <dt class="col4"><div class="pad">Soul</div></dt>
+	            <dt class="col5"><div class="pad">1.39 €</div></dt>
+	            <dt class="col6"><div class="pad">01.11.1993</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(14);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -312,13 +312,13 @@ body {
 	      <tr id="row15">
 	        <td>
 	          <dl>
-	            <dt class="col1">MP3</dt>
-	            <dt class="col2">God In Me</dt>
-	            <dt class="col3">Mary Mary feat. Kierra Kiki She</dt>
-	            <dt class="col4">R'n'B</dt>
-	            <dt class="col5">1.89 €</dt>
-	            <dt class="col6">01.09.2009</dt>
-	            <dt class="col7"><a href="javascript:show(15);">Details</a></dt>
+	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col2"><div class="pad">God In Me</div></dt>
+	            <dt class="col3"><div class="pad">Mary Mary feat. Kierra Kiki She</div></dt>
+	            <dt class="col4"><div class="pad">R'n'B</div></dt>
+	            <dt class="col5"><div class="pad">1.89 €</div></dt>
+	            <dt class="col6"><div class="pad">01.09.2009</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(15);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -327,13 +327,13 @@ body {
 	      <tr id="row16">
 	        <td>
 	          <dl>
-	            <dt class="col1">MP3</dt>
-	            <dt class="col2">Down n Out</dt>
-	            <dt class="col3">Nappy Roots (feat Anthony Hamilton)</dt>
-	            <dt class="col4">Hip Hop</dt>
-	            <dt class="col5">2.39 €</dt>
-	            <dt class="col6">20.04.2009</dt>
-	            <dt class="col7"><a href="javascript:show(16);">Details</a></dt>
+	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col2"><div class="pad">Down n Out</div></dt>
+	            <dt class="col3"><div class="pad">Nappy Roots (feat Anthony Hamilton)</div></dt>
+	            <dt class="col4"><div class="pad">Hip Hop</div></dt>
+	            <dt class="col5"><div class="pad">2.39 €</div></dt>
+	            <dt class="col6"><div class="pad">20.04.2009</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(16);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -342,13 +342,13 @@ body {
 	      <tr id="row17">
 	        <td>
 	          <dl>
-	            <dt class="col1">OGG</dt>
-	            <dt class="col2">Move on Up</dt>
-	            <dt class="col3">Curtis Mayfield</dt>
-	            <dt class="col4">Soul</dt>
-	            <dt class="col5">1.19 €</dt>
-	            <dt class="col6">09.07.1975</dt>
-	            <dt class="col7"><a href="javascript:show(17);">Details</a></dt>
+	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col2"><div class="pad">Move on Up</div></dt>
+	            <dt class="col3"><div class="pad">Curtis Mayfield</div></dt>
+	            <dt class="col4"><div class="pad">Soul</div></dt>
+	            <dt class="col5"><div class="pad">1.19 €</div></dt>
+	            <dt class="col6"><div class="pad">09.07.1975</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(17);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -357,13 +357,13 @@ body {
 	      <tr id="row18">
 	        <td>
 	          <dl>
-	            <dt class="col1">OGG</dt>
-	            <dt class="col2">Cosmic girl</dt>
-	            <dt class="col3">Jamiroquai</dt>
-	            <dt class="col4">Funk</dt>
-	            <dt class="col5">1.79 €</dt>
-	            <dt class="col6">11.12.1997</dt>
-	            <dt class="col7"><a href="javascript:show(18);">Details</a></dt>
+	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col2"><div class="pad">Cosmic girl</div></dt>
+	            <dt class="col3"><div class="pad">Jamiroquai</div></dt>
+	            <dt class="col4"><div class="pad">Funk</div></dt>
+	            <dt class="col5"><div class="pad">1.79 €</div></dt>
+	            <dt class="col6"><div class="pad">11.12.1997</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(18);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -372,13 +372,13 @@ body {
 	      <tr id="row19">
 	        <td>
 	          <dl>
-	            <dt class="col1">MP3</dt>
-	            <dt class="col2">Good Friday</dt>
-	            <dt class="col3">Kanye West ( feat Common, Pusha T, Kid Cudi, Big Sean, Charlie Wilson)</dt>
-	            <dt class="col4">Hip Hop</dt>
-	            <dt class="col5">3.34 €</dt>
-	            <dt class="col6">03.03.2011</dt>
-	            <dt class="col7"><a href="javascript:show(19);">Details</a></dt>
+	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col2"><div class="pad">Good Friday</div></dt>
+	            <dt class="col3"><div class="pad">Kanye West ( feat Common, Pusha T, Kid Cudi, Big Sean, Charlie Wilson)</div></dt>
+	            <dt class="col4"><div class="pad">Hip Hop</div></dt>
+	            <dt class="col5"><div class="pad">3.34 €</div></dt>
+	            <dt class="col6"><div class="pad">03.03.2011</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(19);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -387,13 +387,13 @@ body {
 	      <tr id="row20">
 	        <td>
 	          <dl>
-	            <dt class="col1">OGG</dt>
-	            <dt class="col2">Stay Down</dt>
-	            <dt class="col3">Mary J. Blige</dt>
-	            <dt class="col4">Soul / Hip Hop</dt>
-	            <dt class="col5">1.11 €</dt>
-	            <dt class="col6">02.04.2008</dt>
-	            <dt class="col7"><a href="javascript:show(20);">Details</a></dt>
+	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col2"><div class="pad">Stay Down</div></dt>
+	            <dt class="col3"><div class="pad">Mary J. Blige</div></dt>
+	            <dt class="col4"><div class="pad">Soul / Hip Hop</div></dt>
+	            <dt class="col5"><div class="pad">1.11 €</div></dt>
+	            <dt class="col6"><div class="pad">02.04.2008</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(20);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -402,13 +402,13 @@ body {
 	      <tr id="row21">
 	        <td>
 	          <dl>
-	            <dt class="col1">OGG</dt>
-	            <dt class="col2">Green Light</dt>
-	            <dt class="col3">John Legend (Feat. Andre 3000)</dt>
-	            <dt class="col4">R'n'B</dt>
-	            <dt class="col5">2.89 €</dt>
-	            <dt class="col6">21.06.2007</dt>
-	            <dt class="col7"><a href="javascript:show(21);">Details</a></dt>
+	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col2"><div class="pad">Green Light</div></dt>
+	            <dt class="col3"><div class="pad">John Legend (Feat. Andre 3000)</div></dt>
+	            <dt class="col4"><div class="pad">R'n'B</div></dt>
+	            <dt class="col5"><div class="pad">2.89 €</div></dt>
+	            <dt class="col6"><div class="pad">21.06.2007</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(21);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -417,13 +417,13 @@ body {
 	      <tr id="row22">
 	        <td>
 	          <dl>
-	            <dt class="col1">MP3</dt>
-	            <dt class="col2">Energy Flow</dt>
-	            <dt class="col3">Vitae</dt>
-	            <dt class="col4">Pop</dt>
-	            <dt class="col5">5.99 €</dt>
-	            <dt class="col6">17.08.2003</dt>
-	            <dt class="col7"><a href="javascript:show(22);">Details</a></dt>
+	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col2"><div class="pad">Energy Flow</div></dt>
+	            <dt class="col3"><div class="pad">Vitae</div></dt>
+	            <dt class="col4"><div class="pad">Pop</div></dt>
+	            <dt class="col5"><div class="pad">5.99 €</div></dt>
+	            <dt class="col6"><div class="pad">17.08.2003</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(22);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -432,13 +432,13 @@ body {
 	      <tr id="row23">
 	        <td>
 	          <dl>
-	            <dt class="col1">OGG</dt>
-	            <dt class="col2">Lisztomania</dt>
-	            <dt class="col3">Phoenix</dt>
-	            <dt class="col4">Pop</dt>
-	            <dt class="col5">3.19 €</dt>
-	            <dt class="col6">22.10.2009</dt>
-	            <dt class="col7"><a href="javascript:show(23);">Details</a></dt>
+	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col2"><div class="pad">Lisztomania</div></dt>
+	            <dt class="col3"><div class="pad">Phoenix</div></dt>
+	            <dt class="col4"><div class="pad">Pop</div></dt>
+	            <dt class="col5"><div class="pad">3.19 €</div></dt>
+	            <dt class="col6"><div class="pad">22.10.2009</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(23);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -447,13 +447,13 @@ body {
 	      <tr id="row24">
 	        <td>
 	          <dl>
-	            <dt class="col1">MP3</dt>
-	            <dt class="col2">Don't Mess With My Man</dt>
-	            <dt class="col3">Booty Luv</dt>
-	            <dt class="col4">Dance</dt>
-	            <dt class="col5">1.99 €</dt>
-	            <dt class="col6">23.08.2008</dt>
-	            <dt class="col7"><a href="javascript:show(24);">Details</a></dt>
+	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col2"><div class="pad">Don't Mess With My Man</div></dt>
+	            <dt class="col3"><div class="pad">Booty Luv</div></dt>
+	            <dt class="col4"><div class="pad">Dance</div></dt>
+	            <dt class="col5"><div class="pad">1.99 €</div></dt>
+	            <dt class="col6"><div class="pad">23.08.2008</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(24);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -462,13 +462,13 @@ body {
 	      <tr id="row25">
 	        <td>
 	          <dl>
-	            <dt class="col1">MP3</dt>
-	            <dt class="col2">One desire</dt>
-	            <dt class="col3">Jakarta</dt>
-	            <dt class="col4">Dance</dt>
-	            <dt class="col5">2.49 €</dt>
-	            <dt class="col6">30.09.2006</dt>
-	            <dt class="col7"><a href="javascript:show(25);">Details</a></dt>
+	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col2"><div class="pad">One desire</div></dt>
+	            <dt class="col3"><div class="pad">Jakarta</div></dt>
+	            <dt class="col4"><div class="pad">Dance</div></dt>
+	            <dt class="col5"><div class="pad">2.49 €</div></dt>
+	            <dt class="col6"><div class="pad">30.09.2006</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(25);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -477,13 +477,13 @@ body {
 	      <tr id="row26">
 	        <td>
 	          <dl>
-	            <dt class="col1">MP3</dt>
-	            <dt class="col2">Dani California</dt>
-	            <dt class="col3">Red Hot Chili Peppers</dt>
-	            <dt class="col4">Alternativ</dt>
-	            <dt class="col5">4.00 €</dt>
-	            <dt class="col6">09.05.2002</dt>
-	            <dt class="col7"><a href="javascript:show(26);">Details</a></dt>
+	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col2"><div class="pad">Dani California</div></dt>
+	            <dt class="col3"><div class="pad">Red Hot Chili Peppers</div></dt>
+	            <dt class="col4"><div class="pad">Alternativ</div></dt>
+	            <dt class="col5"><div class="pad">4.00 €</div></dt>
+	            <dt class="col6"><div class="pad">09.05.2002</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(26);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -492,13 +492,13 @@ body {
 	      <tr id="row27">
 	        <td>
 	          <dl>
-	            <dt class="col1">MP3</dt>
-	            <dt class="col2">The Mystery (Who Is God?)</dt>
-	            <dt class="col3">Rakim</dt>
-	            <dt class="col4">Hip Hop</dt>
-	            <dt class="col5">1.00 €</dt>
-	            <dt class="col6">11.08.1997</dt>
-	            <dt class="col7"><a href="javascript:show(27);">Details</a></dt>
+	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col2"><div class="pad">The Mystery (Who Is God?)</div></dt>
+	            <dt class="col3"><div class="pad">Rakim</div></dt>
+	            <dt class="col4"><div class="pad">Hip Hop</div></dt>
+	            <dt class="col5"><div class="pad">1.00 €</div></dt>
+	            <dt class="col6"><div class="pad">11.08.1997</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(27);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -507,13 +507,13 @@ body {
 	      <tr id="row28">
 	        <td>
 	          <dl>
-	            <dt class="col1">OGG</dt>
-	            <dt class="col2">Africa</dt>
-	            <dt class="col3">Toto</dt>
-	            <dt class="col4">Pop</dt>
-	            <dt class="col5">7.89 €</dt>
-	            <dt class="col6">14.02.1979</dt>
-	            <dt class="col7"><a href="javascript:show(28);">Details</a></dt>
+	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col2"><div class="pad">Africa</div></dt>
+	            <dt class="col3"><div class="pad">Toto</div></dt>
+	            <dt class="col4"><div class="pad">Pop</div></dt>
+	            <dt class="col5"><div class="pad">7.89 €</div></dt>
+	            <dt class="col6"><div class="pad">14.02.1979</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(28);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -522,13 +522,13 @@ body {
 	      <tr id="row29">
 	        <td>
 	          <dl>
-	            <dt class="col1">OGG</dt>
-	            <dt class="col2">Too Shy</dt>
-	            <dt class="col3">Kajagoogoo</dt>
-	            <dt class="col4">Pop</dt>
-	            <dt class="col5">8.00 €</dt>
-	            <dt class="col6">01.03.1981</dt>
-	            <dt class="col7"><a href="javascript:show(29);">Details</a></dt>
+	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col2"><div class="pad">Too Shy</div></dt>
+	            <dt class="col3"><div class="pad">Kajagoogoo</div></dt>
+	            <dt class="col4"><div class="pad">Pop</div></dt>
+	            <dt class="col5"><div class="pad">8.00 €</div></dt>
+	            <dt class="col6"><div class="pad">01.03.1981</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(29);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -537,13 +537,13 @@ body {
 	      <tr id="row30">
 	        <td>
 	          <dl>
-	            <dt class="col1">MP3</dt>
-	            <dt class="col2">Stutter (Double Take Remix)</dt>
-	            <dt class="col3">Joe feat. Mystikal</dt>
-	            <dt class="col4">R'n'B</dt>
-	            <dt class="col5">5.19 €</dt>
-	            <dt class="col6">08.09.2000</dt>
-	            <dt class="col7"><a href="javascript:show(30);">Details</a></dt>
+	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col2"><div class="pad">Stutter (Double Take Remix)</div></dt>
+	            <dt class="col3"><div class="pad">Joe feat. Mystikal</div></dt>
+	            <dt class="col4"><div class="pad">R'n'B</div></dt>
+	            <dt class="col5"><div class="pad">5.19 €</div></dt>
+	            <dt class="col6"><div class="pad">08.09.2000</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(30);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -552,13 +552,13 @@ body {
 	      <tr id="row31">
 	        <td>
 	          <dl>
-	            <dt class="col1">MP3</dt>
-	            <dt class="col2">Wuthering Heights</dt>
-	            <dt class="col3">Kate Bush</dt>
-	            <dt class="col4">Pop</dt>
-	            <dt class="col5">1.29 €</dt>
-	            <dt class="col6">01.04.1978</dt>
-	            <dt class="col7"><a href="javascript:show(31);">Details</a></dt>
+	            <dt class="col1"><div class="pad">MP3</div></dt>
+	            <dt class="col2"><div class="pad">Wuthering Heights</div></dt>
+	            <dt class="col3"><div class="pad">Kate Bush</div></dt>
+	            <dt class="col4"><div class="pad">Pop</div></dt>
+	            <dt class="col5"><div class="pad">1.29 €</div></dt>
+	            <dt class="col6"><div class="pad">01.04.1978</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(31);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
@@ -567,13 +567,13 @@ body {
 	      <tr id="row32">
 	        <td>
 	          <dl>
-	            <dt class="col1">OGG</dt>
-	            <dt class="col2">Got To Be Real</dt>
-	            <dt class="col3">Cheryl Lynn</dt>
-	            <dt class="col4">Funk</dt>
-	            <dt class="col5">1.00 €</dt>
-	            <dt class="col6">03.04.1992</dt>
-	            <dt class="col7"><a href="javascript:show(32);">Details</a></dt>
+	            <dt class="col1"><div class="pad">OGG</div></dt>
+	            <dt class="col2"><div class="pad">Got To Be Real</div></dt>
+	            <dt class="col3"><div class="pad">Cheryl Lynn</div></dt>
+	            <dt class="col4"><div class="pad">Funk</div></dt>
+	            <dt class="col5"><div class="pad">1.00 €</div></dt>
+	            <dt class="col6"><div class="pad">03.04.1992</div></dt>
+	            <dt class="col7"><div class="pad"><a href="javascript:show(32);">Details</a></div></dt>
   
 	            <dd class="sdl-details">Details</dd>
 	          </dl>
