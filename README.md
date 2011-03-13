@@ -48,53 +48,65 @@ To use the sortable-dl, include the jQuery library and the sortable-dl script an
 
 NOTE: sortable-dl works NOT on standard HTML tables (more than one table cell in row). As described before, it used a definition list hack for hiding and showing extra information for any table row:
 
-	<table id="sortable">
-	<thead>
-	  <tr>
-	    <td>
-	      <dl>
-	        <dt class="col1"><span>Netz</span></dt>
-	        <dt class="col2"><span>Tarifname</span></dt>
-	        <dt class="col3"><span>Highlight</span></dt>
-	        <dt class="col4"><span>Anschlussgebühr</span></dt>
-	        <dt class="col5"><span>Grundgebühr</span></dt>
-	        <dt class="col6"><span>Datum</span></dt>
-	        <dt class="col7">&nbsp;</dt>
-	      </dl>
-	    </td>
-	  </tr>
-	</thead>
-	<tbody>
-	  <tr id="row1">
-	    <td>
-	      <dl>
-	        <dt class="col1">T-Mobile 1</dt>
-	        <dt class="col2">c-Superflat</dt>
-	        <dt class="col3">Blah blah</dt>
-	        <dt class="col4">330,00 €</dt>
-	        <dt class="col5">52,98 €</dt>
-	        <dt class="col6">01.03.2011</dt>
-	        <dt class="col7"><a href="javascript:show(1);">details</a></dt>
+  <table id="sortable">
+    <thead>
+      <tr>
+        <td>
+          <dl>
+            <dt class="col1"><span class="pad"><span>Row #</span></span></dt>
+            <dt class="col2"><span class="pad"><span>Track</span></span></dt>
+            <dt class="col3"><span class="pad"><span>Interpret</span></span></dt>
+            <dt class="col4"><span class="pad"><span>Genre</span></span></dt>
+            <dt class="col5"><span class="pad"><span>Price</span></span></dt>
+            <dt class="col6"><span class="pad"><span>Release</span></span></dt>
+            <dt class="col7"><span class="pad">&nbsp;</span></dt>
+          </dl>
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+    <tr id="row1">
+      <td>
+        <dl>
+          <dt class="col1"><span class="pad">1</span></dt>
+          <dt class="col2"><span class="pad">Awful Thing</span></dt>
+          <dt class="col3"><span class="pad">Cee-Lo</span></dt>
+          <dt class="col4"><span class="pad">R'n'B</span></dt>
+          <dt class="col5"><span class="pad">1.99 €</span></dt>
+          <dt class="col6"><span class="pad">28.02.2002</span></dt>
+          <dt class="col7"><span class="pad"><a href="javascript:show(1);">Details</a></span></dt>
 
-	        <dd class="vertragsdetails">vertragsdetails 1</dd><dd class="vertragsinfos">vertragsinfos 1</dd>
-	      </dl>
-	    </td>
-	  </tr>
-	  <tr id="row2">
-	    <td>
-	      <dl>
-	        <dt class="col1">T-Mobile 2</dt>
-	        <dt class="col2">a-Superflat</dt>
-	        <dt class="col3">Blah blah</dt>
-	        <dt class="col4">90,00 €</dt>
-	        <dt class="col5">12,98 €</dt>
-	        <dt class="col6">2011/02/28</dt>
-	        <dt class="col7"><a href="javascript:show(2);">details</a></dt>
+          <dd class="sdl-details">
+            <span class="pad">
+              <h2>Details (1)</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+            </div>
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr id="row2">
+      <td>
+        <dl>
+          <dt class="col1"><span class="pad">2</span></dt>
+          <dt class="col2"><span class="pad">Weather Storm</span></dt>
+          <dt class="col3"><span class="pad">Craig Armstrong</span></dt>
+          <dt class="col4"><span class="pad">Ambient</span></dt>
+          <dt class="col5"><span class="pad">0.98 €</span></dt>
+          <dt class="col6"><span class="pad">28.01.2010</span></dt>
+          <dt class="col7"><span class="pad"><a href="javascript:show(2);">Details</a></span></dt>
 
-	        <dd class="vertragsdetails">vertragsdetails 2</dd><dd class="vertragsinfos">vertragsinfos 2</dd>
-	      </dl>
-	    </td>
-	  </tr>
+          <dd class="sdl-details">
+            <span class="pad">
+              <h2>Details (2)</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales facilisis augue, sed suscipit velit aliquam non. Morbi egestas ultricies leo, sit amet luctus mi imperdiet convallis. Nam sit amet arcu id lorem blandit interdum non id velit. Donec velit justo, imperdiet sit amet sollicitudin vitae, hendrerit non erat. Sed vitae mi malesuada urna accumsan lacinia sit amet et diam. Pellentesque at viverra tellus.</p>
+              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce erat enim, scelerisque at vestibulum sed, ultrices eget turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec accumsan leo sed turpis luctus vitae condimentum justo imperdiet. Aenean cursus nunc ac enim pellentesque convallis varius felis condimentum. Maecenas non augue in risus lacinia mollis.</p>
+            </div>
+          </dd>
+        </dl>
+      </td>
+    </tr>
 	</tbody>
 	</table>
 
@@ -153,18 +165,18 @@ Sort by date accepts following date formats:
 
 You can create multiple pagers (normally at the top and bottom of the sortable table) with the following HTML fragment:
 
-	<div class="sdl">
-	  <span class="sdl-info">
-		  <span class="sdl-matches">0</span> Treffer auf
-		  <span class="sdl-pages">0</span> Seite(n)
-	  </span>
-	  <span class="sdl-links">
-	    <span class="sdl-first">Erste</span>
-	    <span class="sdl-previous">Vorherige</span>
-	    <span class="sdl-number-links">&nbsp;</span>
-	    <span class="sdl-next">Nächste</span>
-	    <span class="sdl-last">Letzte</span>
-	  </span>
-	</div>
+  <div class="sdl">
+    <span class="sdl-info">
+  	<span class="sdl-matches">0</span> Hits on
+  	<span class="sdl-pages">0</span> Page(s)
+    </span>
+    <span class="sdl-links">
+      <span class="sdl-first">First</span>
+      <span class="sdl-previous">Previous</span>
+      <span class="sdl-number-links">&nbsp;</span>
+      <span class="sdl-next">Next</span>
+      <span class="sdl-last">Last</span>
+    </span>
+  </div> <!-- /sdl -->
 
 
