@@ -45,6 +45,7 @@
   padding: 5px;
 }
 .sdl-container dd .pad {
+  display: block;
   padding: 20px;
 }
 .sdl-container dt.col1  {
